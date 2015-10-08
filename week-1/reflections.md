@@ -67,19 +67,19 @@ Yes, I do remember ☺ Please see below:
 ### If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be?
 
 ##### Create new repo
-* Go to github.com and Sign in
+* Go to **www.github.com** and Sign in
 * Click **‘+’** sign at top right
 * Select **‘New Repository’** from dropdown
 * Fill in repository name and optional description
 You can choose to make your repository public or private.
-*   Click ‘Create repository'
+* Click **‘Create repository'**
 
 > You just created a repo! Yay! That is awesome ☺
 
 ##### Fork a repo
 * Go to a repository
 * Example https://github.com/rspec/rspec
-* Click ‘FORK’ at the top right of the page.
+* Click **‘FORK’** at the top right of the page.
 
 ##### Clone a repo
 *   Go to repository
