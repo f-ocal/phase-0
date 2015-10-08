@@ -2,7 +2,7 @@
 
 ## What are the 6 Phases of Web Design?
  The 6 Phases of Web Design are
- 1. information Gathering
+ 1. Information Gathering
  2. Planning
  3. Design
  4. Development
@@ -17,9 +17,9 @@ My site's primary goal is to give brief summary about myself. The website will b
 
 My target audience is recruiters, people who are interested in hiring me :smile: and also people who are interested to know me more. Their interests are my level of experience and my expertise in technology. My site will provide good summary of my skills and also serve as my demonstration of those skills.
 
-## What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio? It's ok to have several actions at once, or different actions for different kinds of visitors.
+## What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio?
 
-Cantact me, search for more information about me and probably check social profiles such as LinkedIn, GitHub etc.
+They can cantact me, search for more information and probably check social profiles such as LinkedIn, GitHub etc.
 
 ## What are the main things someone should know about design and user experience?
 
