@@ -1,15 +1,28 @@
 ![Image of site map](./imgs/site-map.png)
 
-1. What are the 6 Phases of Web Design?
+## What are the 6 Phases of Web Design?
+ The 6 Phases of Web Design are
+ 1. information Gathering
+ 2. Planning
+ 3. Design
+ 4. Development
+ 5. Testing and Delivery
+ 6. Maintenance
 
-2. What is your site's primary goal or purpose? What kind of content will your site feature?
+## What is your site's primary goal or purpose? What kind of content will your site feature?
 
-3. What is your target audience's interests and how do you see your site addressing them?
+My site's primary goal is give brief summary about myself. The content will be a collection of information about my background, education and professional experience.
 
-4. What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio? It's ok to have several actions at once, or different actions for different kinds of visitors.
+## What is your target audience's interests and how do you see your site addressing them?
 
-5. What are the main things someone should know about design and user experience?
+My target audience is recruiters, people who are interested in hiring me :smile:. Their interests are my level of experience and my expertise in technology. My site will provide good summary of my skills and also serve as my demonstration of those skills.
 
-6. What is user experience design and why is it valuable?
+## What is the primary "action" the user should take when coming to your site? Do you want them to search for information, contact you, or see your portfolio? It's ok to have several actions at once, or different actions for different kinds of visitors.
 
-7. Which parts of the challenge did you find tedious?
+Cantact me, search for information and probably check social profiles.
+
+## What are the main things someone should know about design and user experience?
+
+## What is user experience design and why is it valuable?
+
+## Which parts of the challenge did you find tedious?
