@@ -27,7 +27,7 @@ Someone should know about the target audience and web designer can design the we
 
 ## What is user experience design and why is it valuable?
 
-User experience is someone's attitude, opinions towards to a provided services, product or system. Once an user interacts directly with the product, their experience will determine their thoughts about the products. For instance, if the design of a website is not good, the site is very slow, it is not accessible through mobile phones, and very confusing, the user won't have very good observation about the site. More technology is advanced, users comprehend the value of the user-centered design.If their experince is good, it is most likely that users will keep using your services and return to your sites.
+User experience is someone's attitude, opinions towards to a provided services, product or system. Once an user interacts directly with the product, their experience will determine their thoughts about the products. For instance, if the design of a website is not good, the site is very slow, it is not accessible through mobile phones, and very confusing, the user won't have very good feeling about the site and product. User expectation is quite high for ease of use for websites, and if it is good, it is most likely that users will keep using your services and return to your sites.
 
 ## Which parts of the challenge did you find tedious?
 
