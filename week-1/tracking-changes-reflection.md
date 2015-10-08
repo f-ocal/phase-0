@@ -1,6 +1,6 @@
 
 
-Note: If you are looking for 1.1 to 1.4 reflections, please go to the following link: https://github.com/f-ocal/p0-cli-exploration/blob/making-changes/week-1/reflections.md
+Note: If you are looking for 1.1 to 1.4 reflections, please go to the following link:https://github.com/f-ocal/phase-0/blob/master/week-1/reflections.md
 
 # Release 5 : Reflect
 ### Using your command line, create a new file called tracking-changes-reflection.md in the week-1 directory.
