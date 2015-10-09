@@ -32,13 +32,3 @@ User experience is someone's attitude, opinions towards to a provided services, 
 ## Which parts of the challenge did you find tedious?
 
 I had some problems with using online free site maps. It wasn't really user friendly and easy to draw basic a site-map of a website.
-
-
-
-
-
-
-
-
-
-
