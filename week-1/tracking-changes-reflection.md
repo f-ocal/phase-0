@@ -15,7 +15,7 @@ Commit is a staged snapshot of any changes that have been made into the code sin
 
 #### What are the best practices for commit messages?
 
-* Capitalization and imperative such as "Add" rather than "added"
+* Capitalization and imperative tense such as "Add" rather than "added"
 
 * Describe at high level what change was done with some addressing.
 
