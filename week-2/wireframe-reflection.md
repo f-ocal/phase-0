@@ -1,4 +1,4 @@
-![wireframe of the website](./imgs/wireframe-index-1.png)
+![wireframe of the website](./imgs/wireframe-index.png)
 
 ![wireframe of index](./imgs/wireframe-blog-index.png)
 
