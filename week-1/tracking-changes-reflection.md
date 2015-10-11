@@ -7,15 +7,17 @@ Note: If you are looking for 1.1 to 1.4 reflections, please go to the following 
 
 #### How does tracking and adding changes make developers' lives easier?
 
-Whenever developers make changes into the content of the files, Git keeps tracks of the file versions, so they can easily go back to the prevision version of the file to retun to the previous staged commits.
+Tracking and adding changes introduces another level of controlling what happens to the code. Whenever developers make changes into the content of files, Git keep track of the changes by preserving at that moment status of the file,which you can see what has been changed by **'git status'** command, so they can roll back to the previous staged version of the file.
 
 #### What is a commit?
 
-Commit is a staged snapshot of the code that you record the changes in the working direcotry and you commit to those changes. Developers will have opportunity to keep keep the snapshots in their local repositories until they publish to the central repositories.
+Commit is a staged snapshot of any changes that have been made into the code since the last version. Developers will have opportunity to keep the snapshots of the modifications whenever they commit to the changes and staged them.
 
 #### What are the best practices for commit messages?
 
-* Describe at high level what was done to the change or revision with some addressing.
+* Capitalization and imperative such as "Add" rather than "added"
+
+* Describe at high level what change was done with some addressing.
 
 * There should be guideliness on how much should be done on a single commit. If there are a lot of changes in the content under a single commit message, it can raise some problems to collaborate with the other changes within your team.
 
@@ -23,7 +25,7 @@ Commit is a staged snapshot of the code that you record the changes in the worki
 
 #### What does the HEAD^ argument mean?
 
-  HEAD^ is the last checked out commit. In more general, it is the current branch you are in.
+  HEAD^ is the last checked out commit. In more general, it is the current branch you are in. When you checkout to the branches, the HEAD revision chnages to the point of the new branch,
 
 #### What are the 3 stages of a git change and how do you move a file from one stage to the other?
 
@@ -39,24 +41,27 @@ Commit is a staged snapshot of the code that you record the changes in the worki
 #### Write a handy cheatsheet of the commands you need to commit your changes?
 
   * go to the terminal
+  * type `git status`
   * type `git add [filename]`
-  * type `git commit -m [Your Message here]`
-  * type `git push`
-  * enter your username and password
+  * type `git commit -m "Add these into this file"`
+  * type `git push origin [new branch name]`
+  * enter your username and password if you didn't save them.
 
 #### What is a pull request and how do you create and merge one?
 
-Pull request is fetching the changes from the remote repository and integrate with the repository on GitHub. To create a pull request, please refer to the following steps:
+Pull request is the process to merge the changes from the branch you made back into the upstream branches. For instance, integrate with the repository on GitHub.
+
+To create a pull request, please refer to the following steps:
 
 * Go to your Github profile and fork a repository to your own repository
 * Go the terminal (Shortcut: hold Command and press Space)
-  * Type `git checkout master` (To Check your repository locally and remotely if there is any different versions)
-  * Type `git pull origin master` (Fetches changes and merges them)
+  * Type `git checkout master` (Checkout to the master branch)
+  * Type `git pull origin master` (Fetch the changes and merges them)
   * Type `git checkout -b pull-request-test` (Create a new branch.Here new branch is called `pull-request-test`)
   * Type `subl .` (Open the file in sublime and type some texts in it)
-  * Type `git status` (Check the chnages)
+  * Type `git status` (Allow to see what changes have been made since last time saved)
   * Type `git add [file name here]`
-  * Type `git commit - m "Type your message here"`
+  * Type `git commit - m "Add these into this file"`
   * Type `git push origin pull-request-test` (Pushing this branch to the Github repository)
 * Go to the web browser and look at the repository that you forked.
   * Click on the `Compare and pull request` button
@@ -67,4 +72,4 @@ Pull request is fetching the changes from the remote repository and integrate wi
 
 #### Why are pull requests preferred when working with teams?
 
-Each team member can modify, amend or contribute to the code. Pull requests are very useful to let other team members to know that you have made changes and then project maintainer can integrate the code into the master.
+Pull requests are very useful when working with a team on a project. Each team member can review, modify or contribute to the code. Pull requests are also preferred to let other team members know about the changes and these changes won't be merged directly to origin master automatically, so project maintainer or main author can review and integrate the changes into the master.
