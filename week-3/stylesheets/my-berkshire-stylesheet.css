@@ -1,4 +1,12 @@
 html {
-  background-color: red;
+  background-color: #ffffff;
   color:#000080;
+}
+
+a {
+  color: #800080;
+}
+
+a:visited {
+  color:#ff0000;
 }
