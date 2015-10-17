@@ -1,0 +1,72 @@
+html {
+  background-color: #ffffff;
+  color:#000080;
+}
+
+.caps { font-size: 30px;}
+
+ul {
+  columns: 2;
+  -webkit-columns:2;
+  list-style-position: inside;
+}
+a {
+  color: #800080;
+}
+
+a:visited {
+  color:#ff0000;
+}
+
+.description {
+  font-size: 10px;
+  color: #000080;
+}
+
+header {
+  text-align: center;
+  font-weight: bold;
+}
+
+header p, header h1, header h2 {
+  margin: 0;
+}
+.break {
+  display: block;
+}
+.h1 { font-size: 18px;}
+.h2 { font-size: 15px;}
+.h3 { font-size: 13px;}
+.h6 {
+  font-size: 10px;
+  margin-top: 20px;
+}
+.centre {
+  text-align: center;
+}
+figure p
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 11px;
+}
+article p {
+  font-size: 12px;
+}
+
+.hr {
+    width: 100%;
+    height: 1px;
+    background: gray;
+    overflow: hidden;
+    -webkit-margin-before: 20px;
+    -webkit-margin-after: 20px;
+  }
+
+  article p {font-size:13px}
+
+li {
+    color:#000000;
+    font-size:16px;
+    margin: 16px 16px 16px 18px;
+}
