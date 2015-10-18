@@ -25,3 +25,9 @@
 
 ![screenshot of header](./imgs/3.4.9.png)
 <figcaption style="text-align:center">fig. 9. Get Creative</figcaption><br>
+
+1. How can you use Chrome's DevTools inspector to help you format or position elements?
+2. How can you resize elements on the DOM using CSS?
+3. What are the differences between Absolute, Fixed, Static, and Relative positioning? Which did you find easiest to use? Which was most difficult?
+4. What are the differences between Margin, Border, and Padding?
+5. What was your impression of this challenge overall? (love, hate, and why?)
