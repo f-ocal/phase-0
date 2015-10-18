@@ -3,13 +3,16 @@ html {
   color:#000080;
 }
 
-.caps { font-size: 30px;}
-
-ul {
-  columns: 2;
-  -webkit-columns:2;
-  list-style-position: inside;
+.caps {
+font-size: 30px;
+padding: 0;
+margin-right: -4px;
 }
+
+/*ul {*/
+  /*-webkit-columns:2;*/
+  /*list-style-position: inside;*/
+/*}*/
 a {
   color: #800080;
 }
@@ -34,8 +37,15 @@ header p, header h1, header h2 {
 .break {
   display: block;
 }
-.h1 { font-size: 18px;}
-.h2 { font-size: 15px;}
+.h1 {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+.h2 { font-size: 15px;
+  padding: 0;
+  margin: 0;
+}
 .h3 { font-size: 13px;}
 .h6 {
   font-size: 10px;
@@ -69,4 +79,14 @@ li {
     color:#000000;
     font-size:16px;
     margin: 16px 16px 16px 18px;
+}
+
+.left{
+  float: left;
+  width: 50%;
+}
+
+.right{
+  float: right;
+  width: 50%;
 }
