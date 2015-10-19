@@ -58,3 +58,4 @@
 5. What was your impression of this challenge overall? (love, hate, and why?)
 
     I find Dev Tools very interesting and useful. It may sometimes be difficult to display what exactly you want right away, you may need to edit other elements or attributes. I think the tool is very good for debugging CSS. By being able to inspect which styling rules are being applied to the element by the browser, we are able to find the root of the problem and rectify the bug.
+    
