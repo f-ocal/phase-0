@@ -28,7 +28,7 @@
 
 1. How can you use Chrome's DevTools inspector to help you format or position elements?
 
-    Chrome Dev Tools which is bundled within the browser can speed up HTML/CSS workflow. It became very popular among web designers and developers due to the its speed, ease of use, and immediate effective results. When we open DevTools on the browser (shortcut is Shift+Command+C on Mac),you can click the Inspect Element Button at the top of the DevTools window. The 'Elements' pane lets you see everything in the document object model (DOM), dynamic and language-neutral interface.The greatest feauture of the inspector tool is that as you hover over a DOM element, it will highlight the relevant tag on the web page you are viewing. 
+    Chrome Dev Tools which is bundled within the browser can speed up HTML/CSS workflow. It became very popular among web designers and developers due to the its speed, ease of use, and immediate effective results. When we open DevTools on the browser (shortcut is Shift+Command+C on Mac),you can click the Inspect Element Button at the top of the DevTools window. The 'Elements' pane lets you see everything in the document object model (DOM), dynamic and language-neutral interface.The greatest feauture of the inspector tool is that as you hover over a DOM element, it will highlight the relevant tag on the web page you are viewing.
 
     The 'Styles' pane shows the CSS rules that applied to the element. You can easily edit, remove or overlap any applied rules on the element, even more you can can apply new rules.
     Last defined rules take presedence if cascade rule dictates that both rules have same origin, weight, and specificity.
