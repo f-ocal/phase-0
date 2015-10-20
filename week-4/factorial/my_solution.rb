@@ -14,7 +14,7 @@ def factorial(number)
   else
     result= 1
     i = number
-    while i > 1
+    while i > 0
       result = result * i
       i= i - 1
     end
