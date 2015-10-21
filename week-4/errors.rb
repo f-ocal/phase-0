@@ -117,11 +117,11 @@
   cartmans_lie('A meteor the size of the earth is about to hit Wyoming!')
 
   # 1. What is the line number where the error occurs?
-  #
+  # => Line number is 113.
   # 2. What is the type of error message?
-  #
+  # => Argument Error.
   # 3. What additional information does the interpreter provide about this type of error?
-  #
+  # => Wrong number of arguments (1 for 2)
   # 4. Where is the error in the code?
   #
   # 5. Why did the interpreter give you this error?
