@@ -16,6 +16,16 @@ In ruby, `integers` are associated with classes just like any object. As an inte
 To convert a floating, hexadecimal or binary number to a integer, you’d simply wrap the float in an integer, such as `integer(20.5) => 20`
 To convert from Integer to float, it follows same method, just wrap integer in an float such as `float(20)=> 20.5`
 
+## Release 2: Try It!
+
+- Hours in a year: 1 year has 365 days, 1 day has 24 hours.
+So, 1 yr 365 days   x
+          1 day   24hrs
+      x= 365 * 24 = 8760 hours in a year (except leap day)
+
+- Minutes in a decade (decade= 10 years)
+  1 year 365 days, 8,760 hours
+  1 hour 60 mins, 8,760 hours x 60 x 10 = 5,256,000 mins.
 
 ## Release 5: Exercises
 
@@ -28,7 +38,7 @@ To convert from Integer to float, it follows same method, just wrap integer in a
 ## Release 7: Reflect
 
 ### How does Ruby handle addition, subtraction, multiplication, and division of numbers?
-Calculators use floats
+Calculators use floats while making any arithmetical operations.
 Addition +
 Substraction -
 Multiplication *
