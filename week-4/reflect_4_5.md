@@ -12,7 +12,7 @@
 
 ### What is the most important thing to know about flow control in your opinion?
 
-Flow control gives us the flexibility we're looking for and introduces the condition. We can select different outcomes depending on information the user types, the result of a computation, or the value returned by another part of the program.
+Flow control gives us the flexibility and opportunity to introduce a condition. We can select different outcomes depending on information the user types, the result of a computation, or the value returned by another part of the program.
 
 ### What is the most difficult thing to understand about flow control?
 
