@@ -17,4 +17,3 @@ def shortest_string(list_of_words)
   list_of_words.min { |x,y| x.length <=> y.length }
 end
   shortest_string(["1","3","10","25"])
-  
