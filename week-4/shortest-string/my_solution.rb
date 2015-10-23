@@ -32,10 +32,10 @@ def shortest_string(list_of_words)
 # Once the array is empty than return the shortest number.
 end
 
-puts shortest_string(["5","4","1","fatma"])
-#
-# #Refactored Solution
-#
-# def shortest_string(list_of_words)
-#   list_of_words.min { |x,y| x.length <=> y.length }
-# end
+#puts shortest_string(["5","4","1","fatma"])
+
+#Refactored Solution
+
+def shortest_string(list_of_words)
+  list_of_words.min { |x,y| x.length <=> y.length }
+end
