@@ -29,9 +29,9 @@ def longest_string(list_of_words)
   longest_number
 # Once the array is empty than return the shortest number.
 end
-
-#Refactored Solution
-
+#puts longest_string(["5","4","fatma","25"])
+# #Refactored Solution
+#
 def longest_string(list_of_words)
   list_of_words.max { |x,y| x.length <=> y.length }
 end
