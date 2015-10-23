@@ -12,6 +12,8 @@
 # If +list_of_nums+ is empty the method should return nil
 
 # Your Solution Below
-def smallest_integer(list_of_nums)
-  # Your code goes here!
+#REFACTORED VERSION
+def smallest_integer(list_of_words)
+  list_of_words.min { |x,y| x <=> y }
 end
+puts smallest_integer(["2","3"])
