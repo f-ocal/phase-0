@@ -1,13 +1,11 @@
 # Factorial
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge with Brian and Abe.
 #Pseudocode
 #First part
-  #condition is zero
+#condition is zero
 #Second part
-  #build factorial by iteriating the number down to 1.
-
-# Your Solution Below
+#build factorial by iteriating the number down to 1.
 def factorial(number)
   if number ==0
     return 1
@@ -20,4 +18,13 @@ def factorial(number)
     end
       return result
   end
+end
+
+# The below solution is my refactored solution - done by myself :)))
+
+def factorial(number)
+  return 1 if [0,1].include? number
+  result = number
+  (2...number).each {|n| result *= n}
+  result
 end
