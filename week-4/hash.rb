@@ -1,16 +1,20 @@
 # Define a Hash
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 
-# Your Solution Below
+# Pseudocode
+# Hash is a collection of objests, that consists of key and value.
+# Symbols can be used either as hash keys or referencing method names.
 
-# my_info is empty to start.  Edit this!
-my_info = {}
-
-
-
-
+# my_info is empty to start.
+# my_info = {"first_name"=> "Fatma","last_name" => "Ocal", "hometown" => "Burdur", "age" => "31"}
+my_info = {
+  :first_name => "Fatma",
+  :last_name => "Ocal",
+  :hometown => "Burdur",
+  :age => 31,
+}
 
 # RSpec Tests. They are included in this file because the local variables you are creating are not accessible across files. If we try to run these files as a separate file per normal operation, the local variable checks will return nil.
 
