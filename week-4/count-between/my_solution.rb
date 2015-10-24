@@ -39,5 +39,6 @@
 # #Refactored Solution
 
 def count_between(list_of_integers, lower_bound, upper_bound)
-    (lower_bound..upper_bound).bsearch { |i| list_of_integers[i] }
+    # (lower_bound..upper_bound).bsearch { |i| list_of_integers[i] }
+    list_of_integers.count { |integer| lower_bound < integer < upper_bound }
 end
