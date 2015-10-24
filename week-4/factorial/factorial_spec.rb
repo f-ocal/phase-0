@@ -9,6 +9,10 @@ describe 'factorial' do
     expect(factorial(1)).to eq 1
   end
 
+  it "calculates 2!" do
+    expect(factorial(2)).to eq 2
+  end
+
   it "calculates 10!" do
     expect(factorial(10)).to eq 3628800
   end
