@@ -1,0 +1,40 @@
+.column-1 {
+    float: left;
+    width: 50%;
+    background: pink;
+    display: inline-block;
+    height: 100em;
+    padding-bottom: 20px;
+}
+.column-2 {
+    float: right;
+    width: 49%;
+    background: yellow;
+    display: inline-block;
+    height: 100em;
+    padding-bottom: 20px;
+}
+header {
+    display: block;
+    background: red;
+}
+
+header h1{
+    text-align: center;
+}
+
+footer {
+    background: blue;
+    text-align: left;
+    clear: both;
+}
+.text_back {
+    background: white;
+}
+body {
+    background: black;
+}
+
+h1, h2 {
+    font-family: cursive;
+}
