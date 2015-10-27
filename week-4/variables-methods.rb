@@ -37,6 +37,6 @@ Release 6: Reflect
 # => you need to type `irb` within the command line, than type
 # => `ruby file_name.rb`
 # How do you run an RSpec file from the command line?
-# => you need to type `rspec file_name.rb from the terminal.
+# => you need to type `rspec file_name.rb` from the terminal.
 # What was confusing about this material? What made sense?
 # => Rspec files were confusing, I had to research through internet what rspec files do. I actually found out that being able to read and write tests in software industry is very important. The process is also called test-driven development. You run the test, and based on test results you can work on the solution.
