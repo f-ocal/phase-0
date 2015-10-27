@@ -2,11 +2,11 @@
 
 ## Release 1
 
-![4.5.1 Good Guess](https://github.com/f-ocal/phase-0/blob/master/week-4/good-guess/my_solution.rb)
-![4.5.2 Calculate a Letter Grade](https://github.com/f-ocal/phase-0/blob/master/week-4/calculate-grade/my_solution.rb)
-![4.5.3 Triangle Side Lengths](https://github.com/f-ocal/phase-0/blob/master/week-4/triangle-side/my_solution.rb)
-![4.5.4 Detecting Leap Years](https://github.com/f-ocal/phase-0/blob/master/week-4/leap-years/my_solution.rb)
-![4.5.5 Detecting Simple Substrings](https://github.com/f-ocal/phase-0/blob/master/week-4/simple-substrings/my_solution.rb)
+* [4.5.1 Good Guess](https://github.com/f-ocal/phase-0/blob/master/week-4/good-guess/my_solution.rb)
+* [4.5.2 Calculate a Letter Grade](https://github.com/f-ocal/phase-0/blob/master/week-4/calculate-grade/my_solution.rb)
+* [4.5.3 Triangle Side Lengths](https://github.com/f-ocal/phase-0/blob/master/week-4/triangle-side/my_solution.rb)
+* [4.5.4 Detecting Leap Years](https://github.com/f-ocal/phase-0/blob/master/week-4/leap-years/my_solution.rb)
+* [4.5.5 Detecting Simple Substrings](https://github.com/f-ocal/phase-0/blob/master/week-4/simple-substrings/my_solution.rb)
 
 ## Release 3: Reflect
 
