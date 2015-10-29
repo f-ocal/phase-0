@@ -19,6 +19,7 @@ To store any data or string in computer's memory for use later, you need to give
 ### How does Ruby know what to return in a method?
 
 ### What does it mean to iterate (or loop) over arrays or hashes?
+Iterating over an array means that the pointer is going over each element of the array and executing the program on each of them. The program could be making simple math operation or printing out the value of the element.
 
 ### What new Ruby methods did you learn about in this challenge?
 
