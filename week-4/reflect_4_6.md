@@ -16,7 +16,7 @@
 Iterating over an array means that the pointer is going over each element of the array and executing the program on each of them. The program could be making simple math operation or printing out the value of the element.
 
 ### How are arrays structured? What can they contain?
-  Arrays are structured in such a way that ordered and in a list of row.
+  Arrays are structured in such a way that ordered and in a list of row. Array holds a collection of the values. Think of an array a bunch of buckets and each bucket has water in it (values)
 
 ### Based on what you've learned, what is the best way to access values in a hash?
 looking up to the key which returns the values.
