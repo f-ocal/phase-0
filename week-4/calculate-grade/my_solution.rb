@@ -1,22 +1,36 @@
 # Calculate a Grade
+# I worked on this challenge with Abe & Brian and Fatma.
+#
 def get_grade(n)
   #sequence of if else statemnets with >=thresholds like 90, 80, 70 etc.
   #will need to include argumaents as an input for the average
   #return the string value of the letter grade
   if n>= 90
-    return "A"
+    "A"
   elsif n>= 80
-    return  "B"
+    "B"
   elsif n >= 70
-    return "C"
+    "C"
   elsif n>= 60
-    return  "D"
+    "D"
   else
-    return "F"
+    "F"
   end
 end
 
-# I worked on this challenge with Abe & Fatma.
+# REFACTORED SOLUTION is done by myself only.
 
-
-# Your Solution Below
+def get_grade(n)
+    case
+    when n >= 90
+      "A"
+    when n >= 80
+      "B"
+    when n >= 70
+      "C"
+    when n >= 60
+      "D"
+    else
+      "F"
+    end
+end
