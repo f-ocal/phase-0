@@ -84,6 +84,7 @@ p my_hash_modification_method!(my_family_pets_ages, 3)
 # .each {} ; iterates through each item of the array or hash,executes the given block for each by passing the element as parameter.
 # .map! ; creates new array containing values returned by executing the block.If you use it for hash, the return value will be in an array, not hash!!!
 # .merge!; returns a new hash containing the old hash containing new values returned from execution of the block by calling with the key and value.
+# .update ; is same as merge!, both update and merge! are destructive methods for combining hashes.(merge is non-destructive method)
 # yield ; method name calls a hidden block, When the method yields to a chunk of code, the code in block runs, and then the control returns to the method.
 
 
