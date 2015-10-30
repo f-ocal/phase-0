@@ -16,7 +16,7 @@
 def acct_group(sum, person)
   # hash_people ={first_name: "Fatma", last_name: "Ocal"}
   # hash_people ={first_name: "Jim", last_name: "Fung"}
-  # total_num_peple =" "
+  # total_num_peple ={}
   acct_four=[]
   # person.each do |element|
     if ( acct_four.length < 5)
