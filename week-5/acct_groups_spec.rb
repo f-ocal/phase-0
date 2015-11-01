@@ -1,3 +1,5 @@
+# This test is written by me to test acct_groups code. I have considered various conditions for the test and I have included expected results.
+
 require_relative "acct_groups"
 
 describe 'accountability group method' do
