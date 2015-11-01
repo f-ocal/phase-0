@@ -150,3 +150,10 @@ p my_hash_modification_method!(my_family_pets_ages, 3)
 #
 #
 #
+# # 5.4.2 Reflect
+# What was your experience like researching for Ruby methods. Did you find them quickly? How easy was it to implement once you found one?
+# Did you find any methods you thought would work but didn't? What made you think they would work? How did you determine they didn't?
+# How does the method you chose iterate through and modify information in a data structure?
+# Is the method you implemented destructive or non-destructive?
+# What did you learn from reading your accountability-group member's explanations on their solutions?
+# What did you learn about researching and explaining your research to others?
