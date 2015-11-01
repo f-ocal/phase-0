@@ -29,7 +29,7 @@ end
 # d.roll
 
 # 3. Refactored Solution
-
+# I can't recall any refactored solution on it. 
 
 
 
@@ -38,11 +38,14 @@ end
 
 # 4. Reflection
 # What is an ArgumentError and why would you use one?
+
 # What new Ruby methods did you implement? What challenges and successes did you have in implementing them?
+
 # What is a Ruby class?
 # Class is a blueprint for an object.
+
 # Why would you use a Ruby class?
-# => Class is like a blueprint of a project, which holds the methods and behaviours in it.
+# => Class is like a blueprint of a project, which holds the methods and behaviours in it. You can define multiple methods within a class.
 
 # What is the difference between a local variable and an instance variable?
 
