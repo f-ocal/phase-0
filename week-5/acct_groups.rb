@@ -1,4 +1,7 @@
-# Creating accountability groups into fives, or fours and threes.
+
+# I have written a driver code (test) for this program, you can find it in the following link
+# https://github.com/f-ocal/phase-0/blob/master/week-5/acct_groups_spec.rb
+
 # Pseudocode
 # Input : An array of list of students.
 # Output : An array of arrays that contains student names in groups of 3-5 with preference of larger groups.
@@ -34,8 +37,6 @@ def group_people(students)
 end
 
 # Release 6: Reflect
-# Create a commented-out reflection section in your acct_groups.rb file to answer the following questions in:
-#
 # What was the most interesting and most difficult part of this challenge?
 # Do you feel you are improving in your ability to write pseudocode and break the problem down?
 # Was your approach for automating this task a good solution? What could have made it even better?

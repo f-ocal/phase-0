@@ -21,7 +21,7 @@ class Die
     @sides
   end
   def roll
-    p rand(1..@sides)
+    rand(1..@sides)
   end
 end
 # d = Die.new(6) - Creating a new object, called 'd' in a class of Die. This means d is the instance of 'Die class'
@@ -29,7 +29,7 @@ end
 # d.roll
 
 # 3. Refactored Solution
-# I can't recall any refactored solution on it. 
+# I can't recall any refactored solution on it.
 
 
 
@@ -40,7 +40,7 @@ end
 # What is an ArgumentError and why would you use one?
 
 # What new Ruby methods did you implement? What challenges and successes did you have in implementing them?
-
+# I used side and roll methods.
 # What is a Ruby class?
 # Class is a blueprint for an object.
 
