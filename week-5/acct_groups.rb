@@ -35,7 +35,7 @@ end
 
 # Release 6: Reflect
 # Create a commented-out reflection section in your acct_groups.rb file to answer the following questions in:
-# 
+#
 # What was the most interesting and most difficult part of this challenge?
 # Do you feel you are improving in your ability to write pseudocode and break the problem down?
 # Was your approach for automating this task a good solution? What could have made it even better?
