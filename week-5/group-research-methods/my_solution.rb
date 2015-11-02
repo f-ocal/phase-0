@@ -193,9 +193,8 @@ p my_hash_splitting_method(my_family_pets_ages, 4)
 #   end
 #   all_pets_array
 # end
-# p my_array_splitting_method(["I", "want", 3, "pets", "but", "only", "have", 2 ])
 # p source = {"spot" => 3, "rex" => 5}
-#
+# p my_hash_splitting_method(my_family_pets_ages, 4)
 
 #####################################################################
 
