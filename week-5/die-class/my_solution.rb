@@ -31,7 +31,7 @@ end
 # d.roll
 
 # 3. Refactored Solution
-
+# Refactored the sides method.
 class Die
   attr_reader :sides
 

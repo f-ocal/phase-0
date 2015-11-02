@@ -33,8 +33,9 @@ def group_people(students)
   elsif result.last.length == 1
     result += slice_into_groups(combine_last_two_groups!(result), 3)
   end
-  result
+  p result
 end
+group_people(["Fatma", "Yasemin", "Burcu", "Zahide", "Nezahat","Bekir", "Kerem", "Ali", "Jim", "Jenny", "Alice", "Ayca"])
 
 # Release 6: Reflect
 # What was the most interesting and most difficult part of this challenge?

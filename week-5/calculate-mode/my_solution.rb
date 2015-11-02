@@ -25,20 +25,22 @@
 
 def mode(array)
   new_hash = {}
-  array.each { |x|
+  array.each do |x|
     if new_hash[x] != nil
       new_hash[x] += 1
     else
       new_hash[x] = 1  # creating new key since it is not existing.
     end
-  }
+  end
+
   most_common = new_hash.values.max
   result = []
-  new_hash.each { |x,y|
+  
+  new_hash.each do |x,y|
     if most_common == y  #just tried calling / sending a link, so
       result.push(x)
     end
-  }
+  end
   # return result
   puts result
 end
