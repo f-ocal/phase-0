@@ -219,8 +219,19 @@ p my_hash_splitting_method(my_family_pets_ages, 4)
 #
 # # 5.4.2 Reflect
 # What was your experience like researching for Ruby methods. Did you find them quickly? How easy was it to implement once you found one?
+# I always enjoy researching about things. It wasn't bad to search for new methods or try to find what might work on the specific challenge. Some of the methods that I already knew helped me to go through the challenge quickly or try new ways to solve the problem. The new ones that I found, was easy to implement once I read about the functionality and the way it works.
+#
 # Did you find any methods you thought would work but didn't? What made you think they would work? How did you determine they didn't?
+# Some methods are very similar one another, it is very easy to misuse. For instance, there were times that I had to swap the .select and .collect or .map with one another. I feel like I am better at the differentiating them now.
+#
 # How does the method you chose iterate through and modify information in a data structure?
+# Iterating through could be done some methods such as e.g. .each, .select, .collect, and .map etc. These kind of methods perform the collection of data repeatedly by making use of a computational procedure as or applying/executing block of code each time to every elements of the collection. According to the computation of the code block, information is updated. Some methods could be destructive to replace the original data in the collection, or some could produce the output within another new array.
+#
 # Is the method you implemented destructive or non-destructive?
+# I have used both destructive or non-destructive methods.
+#
 # What did you learn from reading your accountability-group member's explanations on their solutions?
+# I have had only one person's solution, unfortunately I didn't receive any response from the rest of the group. I did like his code, I find it easy to understand and it was well-written.
+#
 # What did you learn about researching and explaining your research to others?
+# I didn't have a lot of chance to explain my solution to others, except one person, that was ok.
