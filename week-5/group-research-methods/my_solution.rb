@@ -5,7 +5,7 @@
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
-# Person 1 : Shea ########################################
+# Person 1 : Done by Shea ########################################
 
 #pseudocode:
 =begin
@@ -22,14 +22,14 @@ DEFINE a method my_array_finding_method that accepts the two inputs
   RETURN the output array
 END the method my_array_finding_method
 =end
-
-def my_array_finding_method(i_want_pets, thing_to_find)
-  p i_want_pets.select { |value| value.to_s.include? thing_to_find }
-end
-
-def my_hash_finding_method(my_family_pets_ages, thing_to_find)
-  my_family_pets_ages.collect {|key, value| key if value == thing_to_find }.compact
-end
+#
+# def my_array_finding_method(i_want_pets, thing_to_find)
+#   p i_want_pets.select { |value| value.to_s.include? thing_to_find }
+# end
+#
+# def my_hash_finding_method(my_family_pets_ages, thing_to_find)
+#   my_family_pets_ages.collect {|key, value| key if value == thing_to_find }.compact
+# end
 
 # Ruby methods that have been implemented.
 
@@ -39,7 +39,7 @@ end
 # .compact. ; removes nil elements from an array.
 
 
-# Person 2 : Fatma Ocal ##############################################################
+# Person 2 : Done by Fatma Ocal ##############################################################
 #Pseudocode
 # Create a method (called do_if_integer) for same condition in both challenges. The condition is if the number is Integer.
 # Create a method that takes two arguments, which are an array (or a hash) and number_to_add.
@@ -57,28 +57,28 @@ end
 # end
 
 # Shared method in both array and hash
-def do_if_integer(element)
-  if element.is_a?(Integer)
-    yield element
-  else
-    element
-  end
-end
-#array
-def my_array_modification_method!(array, number_to_add)
-  # array.map! {|item| add_number_if_integer(item, number_to_add)} //this works if I don't yield to another block.
-  array.map! {|item| do_if_integer(item){|element| element + number_to_add } }
-end
-p my_array_modification_method!(i_want_pets,2)
-
-#hash
-def my_hash_modification_method!(hash, number_to_add)
-  hash.each do |k,v|
-    hash.merge!(k => do_if_integer(v) {|value| value + number_to_add})
-  end
-end
-p my_hash_modification_method!(my_family_pets_ages, 3)
-
+# def do_if_integer(element)
+#   if element.is_a?(Integer)
+#     yield element
+#   else
+#     element
+#   end
+# end
+# #array
+# def my_array_modification_method!(array, number_to_add)
+#   # array.map! {|item| add_number_if_integer(item, number_to_add)} //this works if I don't yield to another block.
+#   array.map! {|item| do_if_integer(item){|element| element + number_to_add } }
+# end
+# p my_array_modification_method!(i_want_pets,2)
+#
+# #hash
+# def my_hash_modification_method!(hash, number_to_add)
+#   hash.each do |k,v|
+#     hash.merge!(k => do_if_integer(v) {|value| value + number_to_add})
+#   end
+# end
+# p my_hash_modification_method!(my_family_pets_ages, 3)
+#
 # Ruby methods that have been implemented.
 
 # .each {} ; iterates through each item of the array or hash,executes the given block for each by passing the element as parameter.
@@ -122,15 +122,58 @@ p my_hash_modification_method!(my_family_pets_ages, 3)
 # #
 #
 #
-# # Person 5
+# Person 5 - Done by Fatma Ocal
+# I did this challenge by myself.
+#####################################################################
+
+def my_array_method(my_array)
+    results = []
+   results << my_array.select { |x| x.instance_of? Fixnum}
+   results << my_array.select { |x| !x.instance_of? Fixnum}
+   return results
+end
+
+def my_hash_splitting_method(source, age)
+  results = [[],[]]
+  source.select do |x,y| y
+    if y < age
+      results[0] << [x, y]
+    else
+      results[1] << [x, y]
+    end
+  end
+  p results
+end
+my_hash_splitting_method({"henry" => 5, "fozzy" => 7, "bill" => 13, "rob" => 19}, 10)
+
 # def my_array_splitting_method(source)
-#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+#   output_array = [[],[]]
+#   source.each do |x, y|
+#     if y.is_a?(Integer)
+#       output_array[0] << [x, y]
+#     else
+#       output_array[1] << [x, y]
+#     end
+#   end
+#   output_array
 # end
 #
 # def my_hash_splitting_method(source, age)
-#   source # This line is here to make sure all tests initially fail. Delete it when you begin coding.
+#   all_pets_array = [[],[]]
+#   source.each do | name, pets_age |
+#     if pets_age < age
+#       all_pets_array[0] << [name, pets_age]
+#     else
+#       all_pets_array[1] << [name, pets_age]
+#     end
+#   end
+#   all_pets_array
 # end
+# p my_array_splitting_method(["I", "want", 3, "pets", "but", "only", "have", 2 ])
+# p source = {"spot" => 3, "rex" => 5}
+#
 
+#####################################################################
 # Identify and describe the Ruby method(s) you implemented.
 #
 #
