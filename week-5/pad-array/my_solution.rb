@@ -25,9 +25,7 @@ end
 pad!([1,2,3],5,'apple')
 
 # 2. Refactored Solution for Destructive Method
-
-
-
+# We have already factored the current solution from if to while.
 
 
 ###########################################################
@@ -42,17 +40,22 @@ def pad(array, min_size, value = nil)
 end
 pad(['a','b'],5,'filling')
 
-# 2. Refactored Solution for Non-Destructive Method
-
-
-
-
-
 
 #4. Reflection
 # Were you successful in breaking the problem down into small steps?
+# Yes, we broke the problem down into the core pieces of identifying key steps and what action should be taken.
+
 # Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+# It was pretty straight forward; however we found out that setting variable equalities were challenging in non-destructive method.
+
 # Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+# We had some problem with non-destructive method initially since we didn't realize that push was a destructive method.
+
 # When you refactored, did you find any existing methods in Ruby to clean up your code?
+# While was easy to read and used for refactoring from if/
+
 # How readable is your solution? Did you and your pair choose descriptive variable names?
+# I think it is very clear and readable, and we try to make it clear as possible as we could.
+
 # What is the difference between destructive and non-destructive methods in your own words?
+# The non-destructive creates a new array by collecting the values of the input array, and modifying those not original data whereas the destructive array modifies the input array that destructs the original data.
