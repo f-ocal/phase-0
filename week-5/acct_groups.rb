@@ -39,7 +39,16 @@ group_people(["Fatma", "Yasemin", "Burcu", "Zahide", "Nezahat","Bekir", "Kerem",
 
 # Release 6: Reflect
 # What was the most interesting and most difficult part of this challenge?
+# At first, I spent lots of time with implying conditions (if and else or other conditions). It wasn't working at all, the weird thing is that my conditions never finish. After going back and working on pseudocode again, I found out what I should do and how I should.
+
 # Do you feel you are improving in your ability to write pseudocode and break the problem down?
+# Yes, indeed. I think it was really brainstorming and I did great job on this.
+
 # Was your approach for automating this task a good solution? What could have made it even better?
+# I think my solution is very solid. I would have worked on printing out groups with names, but it isn't that necessary. The code does exactly what I wanted to do.
+
 # What data structure did you decide to store the accountability groups in and why?
+# I used arrays, as data structures because it was easier to store each person's name and printing purpose too.
+
 # What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+# I think my solution is simple, readable and very effient. I tried to refactor but I couldn't call any refactoring here.
