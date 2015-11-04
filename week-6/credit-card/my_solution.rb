@@ -69,36 +69,36 @@
 # Refactored Solution
 class CreditCard
 
-  def initialize(input)
-    raise ArgumentError.new('The card is not valid') unless (input.to_s.length == 16 ) && (input.is_a? Integer)
-    @card = input
-   @accumulator = 0
+  def initialize(card_number)
+    raise ArgumentError, 'The card is not valid' unless card_number.to_s.length == 16
+    @card_number = card_number
   end
 
-  def double_even_index
-    array = integer_to_array(@card)
-    array.map! {|character| character.to_i }
-    (0..15).each { |index| array[index] *= 2 if index.even? }
-    return array
+  def check_card
+    doubled_index = double_even_index_elements(@card_number)
+    summed_digits = sum_digits(doubled_index)
+    (summed_digits % 10) == 0
   end
 
-def integer_to_array(integer)
-  integer.to_s.split(//)
-end
+  private
 
-  def sum_digits(array)
-    array.each do |digit|
-      if (digit < 10)
-        @accumulator += digit
-      else
-        integer_to_array(digit).each {|x| @accumulator += x.to_i }
-      end
+  def double_even_index_elements(credit_card_number)
+    array = convert_to_array_of_digits(credit_card_number)
+    array.each_index do |index|
+      array[index] *= 2 if index.even?
     end
   end
 
-def check_card
-  sum_digits(double_even_index)
-   @accumulator % 10 == 0
+  def sum_digits(array_of_digits)
+    convert_array_to_single_digits(array_of_digits).reduce(:+)
+  end
+
+  def convert_to_array_of_digits(integer)
+    integer.to_s.split(//).map(&:to_i)
+  end
+
+  def convert_array_to_single_digits(array_of_digits)
+    convert_to_array_of_digits(array_of_digits.join.to_i)
   end
 end
 
