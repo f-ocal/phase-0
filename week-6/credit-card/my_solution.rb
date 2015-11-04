@@ -91,6 +91,7 @@ class CreditCard
 
   def sum_digits(array_of_digits)
     convert_array_to_single_digits(array_of_digits).reduce(:+)
+    #convert_array_to_single_digits(array_of_digits).inject(0) { |sum, x| sum + x}
   end
 
   def convert_to_array_of_digits(integer)
