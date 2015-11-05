@@ -120,5 +120,9 @@ p serving_size_calc("cookie", 10)
 # p serving_size_calc("cookie", 10)
 # #p serving_size_calc("THIS IS AN ERROR", 5)
 #
-# #  Reflection
+#
 #  Reflection
+# What did you learn about making code readable by working on this challenge?
+# Did you learn any new methods? What did you learn about them?
+# What did you learn about accessing data in hashes?
+# What concepts were solidified when working through this challenge
