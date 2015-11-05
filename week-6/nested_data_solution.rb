@@ -43,8 +43,6 @@ p nested_data[:array][1][:hash]
 
 number_array = [5, [10, 15], [20,25,30], 35]
 
-
-
  number_array.map! do |x|
   if x.is_a? Integer
      x+5
@@ -56,9 +54,6 @@ number_array = [5, [10, 15], [20,25,30], 35]
 end
 
 p number_array
-
-
-
 
 # Bonus:
 
@@ -79,3 +74,8 @@ startup_names.map! do |x|
 end
 
 p startup_names
+#
+# # REFLECTION
+# What are some general rules you can apply to nested arrays?
+# What are some ways you can iterate over nested arrays?
+# Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
