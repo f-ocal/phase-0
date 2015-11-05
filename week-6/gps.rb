@@ -2,7 +2,6 @@
 # 1. Readability
 # 2. Logic (redundancy and syntax)
 
-
 # Your Names
 # 1) Fatma Ocal
 # 2) Alan
@@ -16,7 +15,7 @@ def serving_size_calc(item_to_make, order_quantity)
   # library is the _____________.
   # ingredients
   # desert
-  #   ingredints_per_desert
+  # ingredints_per_desert
 
   ingredients_per_desert = {"cookie" => 1, "cake" =>  5, "pie" => 7}
   #   error_counter = 3
@@ -72,12 +71,11 @@ def serving_size_calc(item_to_make, order_quantity)
   #   when 0
   #     return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}"
   #   else
-  #     return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{serving_size_mod} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+  #     return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{serving_size_mod} leftover ingredients. Suggested baking items: TO DO: MAKE THIS FEATURE"
   #   end
 end
 
 # calls various items with quantities
-
 p serving_size_calc("pie", 7)
 p serving_size_calc("pie", 8)
 p serving_size_calc("cake", 5)
@@ -108,7 +106,7 @@ p serving_size_calc("cookie", 10)
 #   if leftover_ingredients == 0
 #     return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}"
 #   else
-#     "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{leftover_ingredients} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+#     "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{leftover_ingredients} leftover ingredients. Suggested baking items: TO DO: MAKE THIS FEATURE"
 #   end
 # end
 #
@@ -123,6 +121,13 @@ p serving_size_calc("cookie", 10)
 #
 #  Reflection
 # What did you learn about making code readable by working on this challenge?
+# Making code readale helps to understand how the code runs and what is happening within program in shorter time.
+
 # Did you learn any new methods? What did you learn about them?
+# Yes, I learned values_at method(key) which return an array that contains values asssociated with the given keys. (I like to think about it like, it returns values in an array of the keys you asked for)
+
 # What did you learn about accessing data in hashes?
+# On the initial solution, we have accessed the library (ingredients_per_desert), hash containing key and value pairs with .each, which helps to iterate through. On the refactored solution, we use .include? method to check if hash includes item_to_make.
+
 # What concepts were solidified when working through this challenge
+# It helped me to comprehend more on what each code is functioning and how they are calling other functions or even methods. Guide, Michael explained very well what refactoring is about and how we should refactor, that was really good.
