@@ -33,9 +33,10 @@ class Plant
   end
 end
 
-# p Plant.tallest
-# p rose = Plant.new('rose', 5)
-# p rose.grow(2)
-# p rose
-# p Plant.self.tallest
-# rose.tallest
+p Plant.tallest
+p rose = Plant.new('rose', 5)
+p Plant.tallest
+p tulip = Plant.new('tulip', 6)
+p Plant.tallest
+p rose.grow(2)
+p Plant.tallest
