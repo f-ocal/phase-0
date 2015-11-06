@@ -55,6 +55,7 @@ p die.roll
 # die.roll
 
 # Reflection
+
 # What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
 # I didn't need to change much things.
 # What does this exercise teach you about making code that is easily changeable or modifiable?
