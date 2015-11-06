@@ -48,10 +48,10 @@ end
 
 # 4. Reflection
 # What is an ArgumentError and why would you use one?
-# ArgumentError is raised when the number of arguments are wrong and there isn't a more specific exception class.
+# To start with definition of exception, an exception is a special kinf of exceptional conditiona; it indicates that something has gone wrong. When this occurs, an exception is raised. An exception handler is a block of code that is occurs, during execution of normal program and transferring the flow-of-control to the exception handling code - dealing with it or handling it. Ruby's predefined classes - Exception and its children, one of them is ArgumentError. It is raised when the number of arguments are wrong and there isn't a more specific exception class such as passing an argument that is not acceptable.
 
 # What new Ruby methods did you implement? What challenges and successes did you have in implementing them?
-# I used side and roll methods. I had some challenges to understand the getter and setter methods at first.
+# I used side and roll methods. I had some challenges to understand the getter and setter methods at first, after reading about them more, it was then easy to implement. 
 
 # What is a Ruby class?
 # Class is a blueprint for an object. which holds the methods and behaviours in it. You can define multiple methods within a class. When a new class is created, an object of type Class is initialized and assigned to a global constant. When object = ClassName.new is called, a new object is created, which is the instance of this class.
