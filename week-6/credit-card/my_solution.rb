@@ -104,5 +104,7 @@ end
 
 # Reflection
 # What was the most difficult part of this challenge for you and your pair?
+
 # What new methods did you find to help you when you refactored?
+
 # What concepts or learnings were you able to solidify in this challenge?
