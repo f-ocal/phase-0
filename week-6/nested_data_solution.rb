@@ -77,8 +77,10 @@ p startup_names
 #
 # REFLECTION
 # What are some general rules you can apply to nested arrays?
-# Well, you need to keep track of the index number of the elements. You shouldn't confuse yourself when another array is nested within an array. It is also helpful if you put the nested array in line of code instead of putting all code into a single line.
+# Well, you need to keep track of the index number of the elements. You shouldn't confuse yourself when another array is nested within an array. It is also helpful if you put the nested array to the next line instead of putting all code into a single line.
 
 # What are some ways you can iterate over nested arrays?
-# map allows you to iterate
+# map allows you to iterate through an array and .is_a? also checks if any of the elements meets the requirements like if they are string or integer.
+
 # Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+# Not really, I used .map few times, because it is great method to iterate through an array. 
