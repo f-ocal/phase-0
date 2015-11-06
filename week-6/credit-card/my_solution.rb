@@ -65,6 +65,8 @@ cc=CreditCard.new(1234567891234567)
 p cc.check_card
 
 
+
+
 # Refactored Solution
 class CreditCard
 
@@ -85,7 +87,7 @@ class CreditCard
     array = convert_to_array_of_digits(credit_card_number)
     array.each_index do |index|
       array[index] *= 2 if index.even?
-    end
+    # end
   end
 
   def sum_digits(array_of_digits)
@@ -104,7 +106,8 @@ end
 
 # Reflection
 # What was the most difficult part of this challenge for you and your pair?
-
+#
 # What new methods did you find to help you when you refactored?
-
+# I learned about how to refactor your code with consideration of object oriented. That means I have taken out each operation happpening within the code into separate method with clear, distinctive method name.
 # What concepts or learnings were you able to solidify in this challenge?
+#
