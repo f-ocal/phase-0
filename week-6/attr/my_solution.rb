@@ -1,9 +1,9 @@
 
 #Attr Methods
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge by myself.
 
-# I spent [#] hours on this challenge.
+# I spent 2 hours on this challenge.
 
 # Pseudocode
 
@@ -35,11 +35,10 @@ instance_of_profile.change_my_age = 28 # happy birthday! you aged one year
 # Reflection - Release 2: Identify the Changes
 =begin
 What changed between the last release and this release?
-From the output perspective, nothing really changed. When we run the code, it produces the same profile information for Kim and Taylor.
+There wasn't any change from the output perspective; however we didn't define age explicitly using what_is_age method, instead we used attr_reader.
 
-What was replaced?
-Is this code simpler than the last?
-We replaced def what_is_age; end method with attr_reader :age both are the same things. It is definitely simplier. 
+What was replaced? Is this code simpler than the last?
+We replaced def what_is_age; end method with attr_reader :age both are the same things. It is definitely simplier.
 
 # def what_is_age
 #   @age
@@ -52,8 +51,16 @@ We replaced def what_is_age; end method with attr_reader :age both are the same 
 # Reflection - Release 3: More Changes
 =begin
 What changed between the last release and this release?
+This time we went further and change the change_my_age method definition with writeable method of attr_writer :age.
+
 What was replaced?
-Is this code simpler than the last?
+  # def change_my_age=(new_age)
+  #   @age = new_age
+  # end
+
+  with attr_writer :age
+
+Is this code simpler than the last? Yes, it is simplier.
 
 =end
 
