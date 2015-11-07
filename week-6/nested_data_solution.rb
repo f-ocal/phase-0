@@ -75,6 +75,13 @@ end
 
 p startup_names
 
+
+# Refactored Solution done by me.
+# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+# p startup_names.flatten.map { |element| element + "ly"}
+# # this destructs the nested data structure so elements are listed as within single array.
+
+
 # REFLECTION
 # What are some general rules you can apply to nested arrays?
 # Well, you need to keep track of the index number of the elements. You shouldn't confuse yourself when another array is nested within an array. It is also helpful if you put the nested array to the next line instead of putting all code into a single line.
