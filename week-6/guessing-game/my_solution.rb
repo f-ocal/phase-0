@@ -1,8 +1,8 @@
 # Build a simple guessing game
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge by myself.
+# I spent 1 hours on this challenge.
 
 # Pseudocode
 
@@ -15,10 +15,10 @@
 
 class GuessingGame
   def initialize(answer)
-    # Your initialization code goes here
+    @correct_answer = answer
+    
   end
 
-  # Make sure you define the other required methods, too
 end
 
 
