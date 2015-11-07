@@ -18,7 +18,7 @@ class Profile
     puts
   end
 
-  def what_is_age
+  def what_is_age # attribute reader
     @age
   end
 
