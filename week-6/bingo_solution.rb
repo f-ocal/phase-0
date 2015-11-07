@@ -48,6 +48,7 @@ new_game = BingoBoard.new(board)
 
 #Reflection
 =begin
+
 How difficult was pseudocoding this challenge? What do you think of your pseudocoding style?
 What are the benefits of using a class for this challenge?
 How can you access coordinates in a nested array?

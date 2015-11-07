@@ -107,12 +107,13 @@ cc=CreditCard.new(1234567891234567)
 p cc.check_card
 
 # Reflection
+=begin
+What was the most difficult part of this challenge for you and your pair?
+  At the initial solution, we had some challenge with `inject` method. We defined accumulator and initialized to 0 instead. While I was working on the refactoring later by myself, I used reduce method and work on the inject, which both work perfectly.
 
-# What was the most difficult part of this challenge for you and your pair?
-# At the initial solution, we had some challenge with `inject` method. We defined accumulator and initialized to 0 instead. While I was working on the refactoring later by myself, I used reduce method and work on the inject, which both work perfectly.
+What new methods did you find to help you when you refactored?
+  I learned a lot about how to refactor the code with consideration of object oriented meaning that I have taken out each operation into separate method with given clear, distinctive method name. I refactored ArgumentError instead of creating new, you pass the error message as argument with the condition. I also used private which blocks anyone accesing methods outside, for instance you cannot call any of the methods within private, I set check_card to public only. The check_card method calls other private methods. This brings huge security advantages so none can change the code in private and they should ony get output whether the card is valid or not. I think my refactored solution is great, very readable, easy to understand what is happening.
 
-# What new methods did you find to help you when you refactored?
-# I learned a lot about how to refactor the code with consideration of object oriented meaning that I have taken out each operation into separate method with given clear, distinctive method name. I refactored ArgumentError instead of creating new, you pass the error message as argument with the condition. I also used private which blocks anyone accesing methods outside, for instance you cannot call any of the methods within private, I set check_card to public only. The check_card method calls other private methods. This brings huge security advantages so none can change the code in private and they should ony get output whether the card is valid or not. I think my refactored solution is great, very readable, easy to understand what is happening.
-
-# What concepts or learnings were you able to solidify in this challenge?
-# Some of the methods such as split, inject and reduce, private & public methods and refactoring.
+What concepts or learnings were you able to solidify in this challenge?
+  Some of the methods such as split, inject and reduce, private & public methods and refactoring.
+=e

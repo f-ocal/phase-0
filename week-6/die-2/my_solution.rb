@@ -55,14 +55,16 @@ p die.roll
 # die.roll
 
 # Reflection
+=begin
+What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
+  I didn't need to change much things. Overall it was similar. 
 
-# What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
-# I didn't need to change much things.
-# What does this exercise teach you about making code that is easily changeable or modifiable?
-# I learned about methods of sample and shuffle which make to choose randomly.
+What does this exercise teach you about making code that is easily changeable or modifiable?
+  I learned about methods of sample and shuffle which make to choose randomly.
 
-# What new methods did you learn when working on this challenge, if any?
-# As above, I learned rand, sample and shuffle/
+What new methods did you learn when working on this challenge, if any?
+  As above, I learned rand, sample and shuffle/
 
-# What concepts about classes were you able to solidify in this challenge?
-# I was able to solidy about choosing random element through available methods such as shuffle, rand, sample. I am curious if anyone has done something differently on this question.
+What concepts about classes were you able to solidify in this challenge?
+  I was able to solidy about choosing random element through available methods such as shuffle, rand, sample. I am curious if anyone has done something differently on this question.
+=end
