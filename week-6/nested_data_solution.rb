@@ -79,7 +79,28 @@ p startup_names
 # Refactored Solution done by me.
 # startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 # p startup_names.flatten.map { |element| element + "ly"}
-# # this destructs the nested data structure so elements are listed as within single array.
+# # this destructs the nested data structure so elements are return as within single array after including +ly. 
+
+
+
+# # Another refactored Solution
+# print startup_names.map { |element|
+#   if element.kind_of?(Array)
+#     element.map { | inner |
+#       if inner.kind_of?(Array)
+#         inner.map {|inner_inner| inner_inner.capitalize + "ly"}
+#       else
+#         inner.capitalize + "ly"
+#       end
+#     }
+#   else
+#     element.capitalize + "ly"
+#   end
+# }
+# print startup_names
+
+
+
 
 
 # REFLECTION
