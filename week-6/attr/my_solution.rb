@@ -67,9 +67,17 @@ Is this code simpler than the last? Yes, it is simplier.
 # Reflection - Release 6 : Reflect
 =begin
 
-# What is a reader method?
-# What is a writer method?
-# What do the attr methods do for you?
-# Should you always use an accessor to cover your bases? Why or why not?
-# What is confusing to you about these methods?
+What is a reader method?
+  The attr_reader method defines reader method. It is defined such as def description; @description; end. This is convenient shortcut that you can use when your getter simply returns the value of the variable or state of the same name from outside of the class.
+
+What is a writer method?
+  The attr_writer method defines writes method. It is defined such as def description=(new_description); @description = new_description; end. This is convenient shortcut that you can use when your setter method that sets the value of the instance variable of the same name as the setter. It is very similar to the reader method except writer method allows you to write new data to an instance variable.
+
+What do the attr methods do for you?
+  The attr_accessor method defines both reader and writer methods. It is defined such as attr_reader :description; attr_writer :description; In some cases you might want to use both getter and setter for an instance variable, Instead of having defined both reader and writer for the same variable, you can use attr_accessor, both to read and write the value of the instance variable.
+
+
+Should you always use an accessor to cover your bases? Why or why not?
+What is confusing to you about these methods?
+  Nope, we shouldn't always use accessor just to cover both reader and writer methods. It is not good for debugging purpose.
 =end

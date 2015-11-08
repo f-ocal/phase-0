@@ -53,6 +53,7 @@ instance_of_profile = Profile.new
 # This method changed names! Now we have a method called #.age which returns the value of @age, just like what_is_age did. Thanks to attr_reader :age. If you don't believe me and you want to see for your self, paste lines 3 - 50 into IRB and type
 # instance_of_profile.methods - Object.methods
 #age() will be a member of this list!
+
 puts "--- printing age -----"
 sleep 0.8
 p instance_of_profile.age
