@@ -119,15 +119,18 @@ p serving_size_calc("cookie", 10)
 # #p serving_size_calc("THIS IS AN ERROR", 5)
 #
 #
-#  Reflection
-# What did you learn about making code readable by working on this challenge?
-# Making code readale helps to understand how the code runs and what is happening within program in shorter time.
+# Reflection
 
-# Did you learn any new methods? What did you learn about them?
-# Yes, I learned values_at method(key) which return an array that contains values asssociated with the given keys. (I like to think about it like, it returns values in an array of the keys you asked for)
+=begin
+What did you learn about making code readable by working on this challenge?
+  Making code readale helps to understand how the code runs and what is happening within program in shorter time.
 
-# What did you learn about accessing data in hashes?
-# On the initial solution, we have accessed the library (ingredients_per_desert), hash containing key and value pairs with .each, which helps to iterate through. On the refactored solution, we use .include? method to check if hash includes item_to_make.
+Did you learn any new methods? What did you learn about them?
+  Yes, I learned values_at method(key) which return an array that contains values asssociated with the given keys. (I like to think about it like, it returns values in an array of the keys you asked for)
 
-# What concepts were solidified when working through this challenge
-# It helped me to comprehend more on what each code is functioning and how they are calling other functions or even methods. Guide, Michael explained very well what refactoring is about and how we should refactor, that was really good.
+What did you learn about accessing data in hashes?
+  On the initial solution, we have accessed the library (ingredients_per_desert), hash containing key and value pairs with .each, which helps to iterate through. On the refactored solution, we use .include? method to check if hash includes item_to_make.
+
+What concepts were solidified when working through this challenge
+  It helped me to comprehend more on what each code is functioning and how they are calling other functions or even methods. Guide, Michael explained very well what refactoring is about and how we should refactor, that was really good.
+=end

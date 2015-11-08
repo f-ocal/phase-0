@@ -74,8 +74,44 @@ startup_names.map! do |x|
 end
 
 p startup_names
-#
-# # REFLECTION
-# What are some general rules you can apply to nested arrays?
-# What are some ways you can iterate over nested arrays?
-# Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+
+
+# Refactored Solution done by me.
+# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+# p startup_names.flatten.map { |element| element + "ly"}
+# # this destructs the nested data structure so elements are return as within single array after including +ly.
+
+
+
+# # Another refactored Solution
+# print startup_names.map { |element|
+#   if element.kind_of?(Array)
+#     element.map { | inner |
+#       if inner.kind_of?(Array)
+#         inner.map {|inner_inner| inner_inner.capitalize + "ly"}
+#       else
+#         inner.capitalize + "ly"
+#       end
+#     }
+#   else
+#     element.capitalize + "ly"
+#   end
+# }
+# print startup_names
+
+
+
+
+
+# REFLECTION
+=begin
+What are some general rules you can apply to nested arrays?
+  Well, you need to keep track of the index number of the elements. You shouldn't confuse yourself when another array is nested within an array. It is also helpful if you put the nested array to the next line instead of putting all code into a single line.
+
+What are some ways you can iterate over nested arrays?
+  map allows you to iterate through an array and .is_a? also checks if any of the elements meets the requirements like if they are string or integer.
+
+Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+  Not really, I used .map few times, because it is great method to iterate through an array.
+
+=end

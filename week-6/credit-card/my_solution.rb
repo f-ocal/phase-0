@@ -1,17 +1,15 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge with Michael Whelpley.
-# I spent [#] hours on this challenge.
+# I worked on this challenge with Michael Whelpley on the initial solution. I have done refactored solution by myself.
+
+# I spent 2 hours on this challenge.
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: credit card number
+# Output:  true or false based on validation of credit card
 # Steps:
-# Remove the spaces amongst the numbers.
-# Check for valid input. 16 digit long and integer.
-# Define insance variable
 
 # Task 1:
 # Convert the integer to an string, and Split the string then turn string into an array.
@@ -65,7 +63,11 @@ cc=CreditCard.new(1234567891234567)
 p cc.check_card
 
 
-# Refactored Solution
+
+
+# Refactored Solution done by me.
+# Each specific operation has been captured into a separate methods.
+
 class CreditCard
 
   def initialize(card_number)
@@ -101,8 +103,17 @@ class CreditCard
     convert_to_array_of_digits(array_of_digits.join.to_i)
   end
 end
+cc=CreditCard.new(1234567891234567)
+p cc.check_card
 
 # Reflection
-# What was the most difficult part of this challenge for you and your pair?
-# What new methods did you find to help you when you refactored?
-# What concepts or learnings were you able to solidify in this challenge?
+=begin
+What was the most difficult part of this challenge for you and your pair?
+  At the initial solution, we had some challenge with `inject` method. We defined accumulator and initialized to 0 instead. While I was working on the refactoring later by myself, I used reduce method and work on the inject, which both work perfectly.
+
+What new methods did you find to help you when you refactored?
+  I learned a lot about how to refactor the code with consideration of object oriented meaning that I have taken out each operation into separate method with given clear, distinctive method name. I refactored ArgumentError instead of creating new, you pass the error message as argument with the condition. I also used private which blocks anyone accesing methods outside, for instance you cannot call any of the methods within private, I set check_card to public only. The check_card method calls other private methods. This brings huge security advantages so none can change the code in private and they should ony get output whether the card is valid or not. I think my refactored solution is great, very readable, easy to understand what is happening.
+
+What concepts or learnings were you able to solidify in this challenge?
+  Some of the methods such as split, inject and reduce, private & public methods and refactoring.
+=e
