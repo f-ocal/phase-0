@@ -5,20 +5,34 @@
 
 # I spent 2 hours on this challenge.
 
-# Pseudocode
-
-# Input:
-# Output:
-# Steps:
-
 class NameData
 
-end
+  attr_reader :name
 
+  def initialize
+    @name = 'Fatma'
+  end
+
+## If the method name of `name` is different, than we can't write it in shortcut of attr_reader:::::::::::::::::
+#   def name
+#       @name
+#   end
+
+end
 
 class Greetings
+  def initialize
+    @name = NameData.new
+  end
+
+  def hello
+    puts "Hello #{@name.name}! How wonderful to see you today!"
+  end
 
 end
+
+greet = Greetings.new
+greet.hello
 
 # Reflection - Release 1: Read and Research
 =begin
