@@ -34,7 +34,7 @@ end
 greet = Greetings.new
 greet.hello
 
-# Reflection - Release 1: Read and Research
+###### Release 1: Read and Research
 =begin
 
 What are these methods doing?
@@ -46,7 +46,7 @@ instance_of_profile.change_my_age = 28 # happy birthday! you aged one year
 
 =end
 
-# Reflection - Release 2: Identify the Changes
+###### Release 2: Identify the Changes
 =begin
 What changed between the last release and this release?
 There wasn't any change from the output perspective; however we didn't define age explicitly using what_is_age method, instead we used attr_reader.
@@ -62,7 +62,7 @@ We replaced def what_is_age; end method with attr_reader :age both are the same 
 
 =end
 
-# Reflection - Release 3: More Changes
+###### Release 3: More Changes
 =begin
 What changed between the last release and this release?
 This time we went further and change the change_my_age method definition with writeable method of attr_writer :age.
@@ -78,7 +78,7 @@ Is this code simpler than the last? Yes, it is simplier.
 
 =end
 
-# Reflection - Release 6 : Reflect
+###### Release 6 : Reflect
 =begin
 
 What is a reader method?
