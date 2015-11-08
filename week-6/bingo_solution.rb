@@ -41,13 +41,18 @@ class BingoBoard
     @number = rand(1...10)  #this should produces "12"
     @bingo_call = [@letter].concat([@number]).join  # This will combine "B" and "12"= > "B12"
     @bingo_call_split = @bingo_call.split(//) # This will produce ["B", "12"]
+    5.times do # fancy dots. 
+      print "."
+      sleep 0.3
+    end
     p "The BINGO is #{@bingo_call}"
+
   end
 
   def check_column_if_it_has_bingo
-    puts "The old BINGO board is "
+    puts "---- The old BINGO board is -----"
     @bingo_board.each { |row| p row }
-    
+
     if (@bingo_call_split[0] == 'B')
       # p @bingo_board.map {|row| row.include?(@number) ? (row[0][row[0].index(@bingo_call[1])] = 'X'; row[0]) : row[0]}
       @bingo_board.collect do |row| # iterating over a double array here
@@ -77,17 +82,17 @@ class BingoBoard
 
   def display_column
     # p "The column where BINGO is found at #{@column_info}"
-    puts "The new BINGO board is "
+    puts "---- The new BINGO board is -----"
     @bingo_board.each { |row| p row }
   end
 
 end
 
 board = [ [1, 6, 8, 3, 7],
-          [2, 7, 7, 2, 6],
-          [3, 8, 6, 1, 5],
-          [4, 9, 5, 9, 1],
-          [5, 9, 4, 8, 3]]
+[2, 7, 7, 2, 6],
+[3, 8, 6, 1, 5],
+[4, 9, 5, 9, 1],
+[5, 9, 4, 8, 3]]
 
 new_game = BingoBoard.new(board)
 new_game.call_bingo_letter_and_number
