@@ -35,21 +35,22 @@ p die.sides
 p die.roll
 
 # Refactored Solution
-
+#
 class Die
-
-  attr_reader :sides
 
   def initialize(labels)
     @labels = labels
-    raise ArgumentError.new('The number should be positive') if @labels.empty?
+    raise ArgumentError.new('The number should be positive') if sides == 0
   end
+
   def sides
     @labels.length
   end
+
   def roll
     @labels.sample
   end
+
 end
 
 die = Die.new(['A', 'B', 'C', 'D', 'E', 'F'])
@@ -59,14 +60,14 @@ p die.roll
 # Reflection
 =begin
 What were the main differences between this die class and the last one you created in terms of implementation? Did you need to change much logic to get this to work?
-  I didn't need to change much things. Overall it was similar.
+I didn't need to change much things. Overall it was similar.
 
 What does this exercise teach you about making code that is easily changeable or modifiable?
-  I learned about methods of sample and shuffle which make to choose randomly.
+I learned about methods of sample and shuffle which make to choose randomly.
 
 What new methods did you learn when working on this challenge, if any?
-  As above, I learned rand, sample and shuffle/
+As above, I learned rand, sample and shuffle/
 
 What concepts about classes were you able to solidify in this challenge?
-  I was able to solidy about choosing random element through available methods such as shuffle, rand, sample. I am curious if anyone has done something differently on this question.
+I was able to solidy about choosing random element through available methods such as shuffle, rand, sample. I am curious if anyone has done something differently on this question.
 =end
