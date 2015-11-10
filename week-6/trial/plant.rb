@@ -1,10 +1,11 @@
 class Plant
-  @@tallest = nil
+
+  @@tallest_plant = nil
 
   def initialize(name, height)
     @name = name
     @height = height
-    check_for_tallest
+    save_tallest
   end
 
   def height
@@ -17,26 +18,26 @@ class Plant
 
   def grow(inches)
     @height +=inches
-    check_for_tallest
+    save_tallest
   end
 
   def self.tallest
-    @@tallest
+    @@tallest_plant
   end
 
   private
 
-  def check_for_tallest
-    if @@tallest.nil? || @height > @@tallest.height
-      @tallest = self
+  def save_tallest
+    if @@tallest_plant.nil? || @height > @@tallest_plant.height
+      @@tallest_plant = self
     end
   end
 end
 
+
+rose = Plant.new('rose', 5)
 p Plant.tallest
-p rose = Plant.new('rose', 5)
+tulip = Plant.new('tulip', 6)
 p Plant.tallest
-p tulip = Plant.new('tulip', 6)
-p Plant.tallest
-p rose.grow(2)
+rose.grow(2)
 p Plant.tallest
