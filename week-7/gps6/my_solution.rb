@@ -1,12 +1,11 @@
 # Virus Predictor
 
 # I worked on this challenge with Adell.
-# We spent 2 hours on this challenge.
+# We spent 2.5 hours on this challenge.
 
 # EXPLANATION OF require_relative
 # Linking with another file called state_data. State_data file has input information that is required for this code.
 require_relative 'state_data'
-=begin
 
 class VirusPredictor
 
@@ -75,7 +74,6 @@ california.virus_effects
 alaska = VirusPredictor.new("Alaska", STATE_DATA["Alaska"][:population_density], STATE_DATA["Alaska"][:population])
 alaska.virus_effects
 
-=end
 
 #=======================================================================
 
@@ -145,3 +143,21 @@ class VirusPredictor
 end
 state_info = VirusPredictor.new
 state_info.state_summary
+
+=begin
+Reflection
+What are the differences between the two different hash syntaxes shown in the state_data file?
+  The different hash syntaxes are => and :. The sign `=>`
+What does require_relative do? How is it different from require?
+  require_relative links another file called state_data. State_data file has input information that is required for this code.
+
+What are some ways to iterate through a hash?
+You can use each to iterate through hash. We can also use map method, too.
+
+When refactoring virus_effects, what stood out to you about the variables, if anything?
+  I found out that the variables are unneccessary when I refactor virus_effects, so we took out the instance variables from predicted_deaths and speed_of_spread. Because we have initialized the variables inside the state_summary.
+
+What concept did you most solidify in this challenge?
+  I think I understood the instance variables, and refactoring. We could able to pull out repeated condition into another method which gives us great refactoring.
+
+=end
