@@ -34,28 +34,75 @@
 //Ch.1 Values, Types and Operators
 //Identify two similarities and two differences between JavaScript and Ruby syntax with regard to numbers, arithmetic, strings, booleans, and various operators.
   // Values in Javascript is the chunk of the bits that were separated and each represent pieces of information. There are six basic types of values in JavaScript: numbers, strings, Booleans, objects, functions, and undefined values.
-  //The following values are the same in both Javascript and Ruby.
-    // 1. Numbers are the numerical values, writen as 10. Numbers vary from whole number, integer or frctional numbers, float.
+  //Let's look at each values in both Javascript and Ruby.
+    // 1. Numbers are the numerical values, writen as 10. Numbers vary from whole number, integer or frctional numbers, float. There are 3 special numbers in Javascript which are Infinity, -Infinity, and Infinity-1. In Ruby, I have seen only Infinity which results when you divide any number with `0`.
     //2. Strings are the basic data types that reqpresent the text. They are written in both Ruby and Javascript between quotes. While we are writing strings, whenever a backslash(\) is found inside quoted text, it indicates that the character after ita has a special meaning, which is called escaping the character. When 'n' character comes after backslash, it interpretes as new line (\n) which is also the same in Ruby. Besides `\n`, Javascript has the same `+` operator that concatenates two strings.
-    //3. Booleans are the true and false states.
-    //4. Objects are
-
+    //3. Booleans are the true and false values which distinguishes two possibilities like `on` or `off`. Boolean values are the same for both in Ruby and Javascript.
+    //4. Objects and their associated methods are both included in both Ruby and Javascript, which leads that both are object oriented. A prototype in Javascript is much like a Class in Ruby such as:
+    // function Cat(name, age) {
+    // this.name = name;
+    // this.meow = function() {
+    // console.log("My name is" +this.name+!) };
+    // };
+    // var cuteCat = new Cat("Sandy", "5");
+    //The cuteCat object is considered a new instance of the Cat prototype. Prototype is essentially the same as Class in Ruby. Note that this in JavaScript is the same concept as self in Ruby.
+    //5. Functions . each method is commonly used in Ruby to iterate through an array. Javascript has each function does the same thing but the syntax is different. array.each {|element| block } versus array.forEach(function(n)) { console.log(n); }.
+    //Ruby Methods
+      // def plus_5(num = 0)
+      // num + 5
+      // end
+      // plus_5(10) # This returns to 15
+      // using map method:
+      // [5, 10, 15].map { |k| plus_5(k) }  // This returns to [10, 15, 20]
+    // Javascript Functions
+      // function plus_5(num) { return (num || 0) + 5; }
+      // plus_5();   //This returns to 5
+      // plus_5(10); //This returns to 15
+      // [5, 10, 15].map(plus_5); // This returns to [10, 15, 20]  
+    //6. Undefined values are different. null(nil in Ruby) and false will return false. However, some values in Ruby will return false in JavaScript, like 0, empty strings (""), and undefined.
 
 //Ch.2 Program Structure
 What is an expression?
+
+
 What is the purpose of semicolons in JavaScript? Are they always required?
-What causes a variable to return undefined?
+
+
+//What causes a variable to return undefined?
+//When the variable equals to false, null, `0` or empty string (""), a variable returns to undefined.
+
 Write your own variable and do something to it in the eloquent.js file.
+
+var fruit_basket {
+  apple
+  orange
+}
+
 What does console.log do and when would you use it? What Ruby method(s) is this similar to?
+
+
 Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
+
+
 Describe while and for loops
-What other similarities or differences between Ruby and JavaScript did you notice in this section?
+
+
+//What other similarities or differences between Ruby and JavaScript did you notice in this section?
+//Binary operators (+, -, *, /, %) and comparison (==, !=, ===, !==, <, >, <=, >=) are the same in both Ruby and Javascript.
+// To increment or decrement by 1 in Javascript, you can write ++ or --, in Ruby that's += or -=
+
 Complete at least one of the exercises (Looping a Triangle, FizzBuzz, of Chess Board) in the eloquent.js file.
 
+
+
 //Ch3. FunctionsWhat are the differences between local and global variables in JavaScript?
+
 When should you use functions?
+
 What is a function declaration?
+
 Complete the minimum exercise in the eloquent.js file.
+
 
 //Ch.4
 Skip the sections on the Lycanthrope's log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
