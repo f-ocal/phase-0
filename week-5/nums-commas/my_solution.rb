@@ -10,6 +10,30 @@
 # What is the output? (i.e. What should the code return?)
 # => The output is a comma-separated integer as a string.
 # What are the steps needed to solve the problem?
+# Convert the number to a string and reverse it permanently.
+# Define a starting index of 0.
+# Whenever the length of the string minus 3 is greater than the index,
+# It insert a comma at the index of whatever the index + 3 is.
+# It adds four to the index, and it reverses the number back, then outputs the numbers to the console.
+
+# 0. Initial solution
+def separate_comma(number_to_separate)
+  return nil if number_to_separate < 0
+  number_separate = number_to_separate.to_s.reverse!
+  #Defining a starting index of 0.
+  index = 0 ;
+  #inspect(index, obj) => insert the given values before the element with the given index.
+  # inserting comma every 3 digits.
+  while index < number_separate.length - 3
+    number_separate.insert(index + 3, ",")
+    index += 4
+  end
+  number_separate.reverse!
+  p number_separate
+end
+separate_comma(99912345)
+
+# The following solutions are made by Regex.
 # => Define a method which takes a single argument of positive integer.
 # => Check if the argument is positive.
 # => If the argument is not positive, return nil!
@@ -21,7 +45,7 @@
 # => Then, combine the chunks with ',' between the chunks
 # => Reversing the string back.
 
-# 1. Initial Solution
+# 1. First Solution Before Refactored Solution
 def separate_comma(number_to_separate)
   return nil if number_to_separate < 0
   numbers=[]
