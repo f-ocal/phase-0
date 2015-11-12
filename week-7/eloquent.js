@@ -1,6 +1,6 @@
 // Eloquent JavaScript
 
-// Run this file in your terminal using `node my_solution.js`. Make sure it works before moving on!
+// Run this file in your terminal using `node eloquent.js`. Make sure it works before moving on!
 
 // Program Structure
 // Write your own variable and do something to it.
@@ -153,7 +153,7 @@
 Complete the minimum exercise in the eloquent.js file.
 
 
-Ch.4  Data Structures: Objects and and Arrays 
+Ch.4  Data Structures: Objects and and Arrays
 
 Skip the sections on the Lycanthropes log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
 
