@@ -5,9 +5,10 @@
 // __________________________________________
 // Write your code below.
 
-
-
-
+var secretNumber = 7;
+password = "just open the door"
+allowedIn =false;
+members = ["John", "","","Mary"]
 
 
 
