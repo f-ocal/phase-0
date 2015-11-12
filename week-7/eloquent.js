@@ -153,11 +153,16 @@
 Complete the minimum exercise in the eloquent.js file.
 
 
-Ch.4
+Ch.4  Data Structures: Objects and and Arrays 
 
 Skip the sections on the Lycanthropes log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
 
-What is the difference between using a dot and a bracket to look up a property? Ex.
+What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+
+Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+
+What is a JavaScript object with a name and value property similar to in Ruby?
+
 
 // Release 2:
 /*
