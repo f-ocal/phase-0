@@ -16,15 +16,31 @@ var terah = {
 // __________________________________________
 // Write your code below.
 
+/*
+Define a variable adam and use object literal notation to assign this variable the value of an object with no properties.
+Give adam a name property with the value "Adam".
+Add a spouse property to terah and assign it the value of adam.
+Change the value of the terah weight property to 125.
+Remove the eyeColor property from terah.
+Add a spouse property to adam and assign it the value of terah.
+Add a children property to terah and use object literal notation to assign this variable to an empty object.
+Add a carson property to the value of the terah children property. carson should be an object with a property name with the value "Carson".
+Add a carter property to the value of the terah children property. carter should be an object with a property name with the value "Carter".
+Add a colton property to the value of the terah children property. colton should be an object with a property name with the value "Colton".
+Add a children property to adam and assign it the value of terah.children.
+*/
 
-
-
-
-
-
-
-
-
+var adam = {}   //var adam = new Object()
+adam.name = "Adam";
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor; //delete terah[eyeColor];
+adam.spouse = terah
+terah.children = {}
+terah.children.carson = {name: "Carson"}
+terah.children.carter = {name: "Carter"}
+terah.children.colton = {name: "Colton"}
+adam.children = terah.children
 
 // __________________________________________
 // Reflection: Use the reflection guidelines
