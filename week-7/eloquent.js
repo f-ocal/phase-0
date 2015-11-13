@@ -72,7 +72,7 @@
           // };
           // var cuteCat = new Cat("Sandy", "5");
     //The cuteCat object is considered a new instance of the Cat prototype. Prototype is essentially the same as Class in Ruby. Note that this in JavaScript is the same concept as self in Ruby.
-    //5. Functions . each method is commonly used in Ruby to iterate through an array. Javascript has each function does the same thing but the syntax is different. array.each {|element| block } versus array.forEach(function(n)) { console.log(n); }.
+    //5. Functions . each method is commonly used in Ruby to iterate through an array. Javascript has each function does the same thing but the syntax is different. Ruby has array.each {|element| block } versus Javascript is array.forEach(function(n)) { console.log(n); }.
     //Ruby Methods
           // def plus_5(num = 0)
           // num + 5
@@ -139,7 +139,7 @@
     // This variable will be always global, no matter where is created.
 
 // When should you use functions?
-// Function is a piece of program that wrapped in a value. Whenever we want to run wrapped program, we can apply functions to variables. You can call a function by putting parentheses after an expression which produces function value. You will directly use the name of the variable that holds the function. The values(these could be strings) between the parentheses are given to the program inside the function.
+// Function is a piece of program that wrapped in a value. Whenever we want to run wrapped program, we can apply functions to variables. You can call a function by putting parentheses after an expression which produces function value. You will directly use the name of the variable that holds the function. The values(these could be strings) between the parentheses are given to the program inside the function. Shortly, functions are the butter and heart of the JavaScript programming.
 
 // What is a function declaration?
 // When we are declaring a function, we should have () and {}. The block of code goes between the curly braces. A function declaration defines a named function variable witout requiring variable assignment. The declaration occur as standalone constructs and cannot be nested within non-function blocks. We can think them like siblings of Variable declaration, just as variable declarations must start with "var", function declarations must begin with "function".
@@ -160,6 +160,7 @@ Skip the sections on the Lycanthropes log, Computing Correlations, and sections 
 What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
 
 Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+me = {name: Fatma, age: 31, favorite foods: beans, spinach and Turkish soop and quirk: }
 
 What is a JavaScript object with a name and value property similar to in Ruby?
 
