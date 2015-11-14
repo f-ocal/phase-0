@@ -89,7 +89,7 @@
 
 //Ch.2 Program Structure
 //What is an expression?
-  //A fragment of a code that produces a value is called expression. Every value that is written literally is an expression. The simpliest kind of statement is an expression with a semicolon after it.
+  //A fragment of a code that produces a value is called expression. Every value that is written literally is an expression. The simpliest kind of statement is an expression with a semicolon after it. A function Expression defines a function as a part of a larger expression syntax (typically a variable assignment ). Functions defined via Functions Expressions can be named or anonymous. Function Expressions must not start with “function”.
 
 //What is the purpose of semicolons in JavaScript? Are they always required?
   //If there is no semicolons in Javascript, the next line will be treated as part of the same statement. Most of the time you need to end the code with semicolons. In some cases, JS allows you to omit the semicolons.
