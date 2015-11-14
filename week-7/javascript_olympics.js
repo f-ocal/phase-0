@@ -14,7 +14,6 @@ function eventWon(athletes) {
  for (var i=0; i < athletes.length; i++) {
    athletes[i].win = athletes[i].name + " won the event " + athletes[i].event;
    console.log(athletes[i].win);
-
  }
 }
 eventWon(athletes)
@@ -59,8 +58,18 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 // Reflection
 /*
 What JavaScript knowledge did you solidify in this challenge?
+  I have learned about the index references for the each elements of an array, how we can use these indexes to retrieve element information. I solidified iterating through array with for loop, taking out even numbers into another array.
+
 What are constructor functions?
+  There are two ways to create object in JavaScript: they are 'Constructor functions' and 'Literal notation'. Constructor function syntax is as following
+
+function myObject(){
+  this.name = 'Fatma'; // .name is the property of myObject
+  this.print = function(){  //.print is the method of the myObject. Here a method is calling a function () to execute the code.
+      alert('I am ' + this.name);
+  };
+};
+
 How are constructors different from Ruby classes (in your research)?
-
-
+  Ruby classes have different methods that you can call each of them and pass argument of input. JavaScript, we initialize a property and method to an object and then we call the property and function.
 */
