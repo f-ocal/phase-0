@@ -3,19 +3,6 @@ Person 1 : Fatma
 
 User Story:
 
-As a user,
-
-I should be able to provide a list of numbers and calculate the sum.
-
-I should be able to provide a list of numbers and calculate the mean.
-
-I should be able to provide a list of numbers which has an even length, it should give me the average of two middle numbers.
-
-I should be able to provide a list of numbers which has an odd length, it should give me the middle number of the list.
-
-/*
-Previous User Story:
-
 As a user, I want to do build a function that takes an input from the user for an nested array and a hash with key/value pairs.
 The input for nested array should be composed of two arrays.
 I want one of the array takes odd integers and the array takes even integers from the user.
@@ -40,7 +27,6 @@ If his telephone number is more or less than 11 digits, tell him the number is w
 
 Person 2 : Shea
 
-/*
 Initial Pseudocode:
 
 Input:
@@ -139,5 +125,3 @@ DEFINE a function that receives one nested array and one hash.
 END primary function
 
 CALL the primary function and pass it outerArray and person.
-
-*/
