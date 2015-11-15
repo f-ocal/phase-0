@@ -157,12 +157,6 @@ function done() {
   console.log('Now that process.stdin is paused, there is nothing more to do.');
   process.exit();
 }
-// movePerson(hero, 'north');
-// movePerson(hero, 'north');
-// movePerson(hero, 'north');
-// movePerson(hero, 'north');
-// movePerson(hero, 'east');
-// movePerson(hero, 'north');
 
 // Refactored Code
 
