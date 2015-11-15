@@ -3,7 +3,7 @@
 // This is a solo challenge
 
 // Your mission description:
-// Overall mission: Collect the gems and move to the next level
+// Overall mission: Collect the diamonds and move to the next level
 // Goals: Collect the treasure and attack Canavar when necessary
 // Characters: Savasci and Canavar
 // Objects: Savasci(position, Amount of Gold, and health), Dwarf
@@ -14,21 +14,19 @@
 // Add different methods to 'Warrior' to make it move up, down or right (forward)
 // Declara a 'Canavar' object and give it a random position.
 // Move the player, also assign another random Position to Canavar.
-// Check where Savasci is with respect to the dragon and gem
-// If its the same position as gem, pick up the gem!
+// Check where Savasci is with respect to the dragon and diamond
+// If its the same position as diamond, pick up the diamond!
 // If the Savasci position is same as Canavar, attack the Canavar.
-// If Canavar gets 3 times attacks, Canavar is dead and you won the game. Display "You Won!" and display theasure amount. 
+// If Canavar gets 3 times attacks, Canavar is dead and you won the game. Display "You Won!" and display theasure amount.
 // If Savasci gets 3 times attacks, Savasci is dead and you lost the game.
 
 // Initial Code
 
-// Create at least 2 objects with properties
-// Create at least 2 functions that interact with those objects by adding or modifying the objects properties
-// Call each function (invoke the function) Make sure the output is actually what you expect
-
-var personFirst = {
-  name: "Tom",
-  age: 20
+var Savasci = {
+  posX: 0,
+  posY: 0,
+  diamond : 0,
+  success : false,
 };
 
 function displayFirstPerson(person) {
@@ -40,9 +38,10 @@ function displayFirstPerson(person) {
 displayFirstPerson(personFirst);
 
 
-var personSecond = {
-  name: "Jerry",
-  age : 35
+var Canavar = {
+  posX: 0 ,
+  posY : 0,
+  success : false,
 };
 
 function displaySecondPerson(personSecond){
