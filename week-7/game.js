@@ -22,67 +22,92 @@
 
 // Initial Code
 
+//Declaring Canavar
+var Canavar = {
+  posX: 10 ,
+  posY : 0,
+  success : false,
+  health : 10,
+  };
+
+//Declaring diamond
+var diamond ={
+  // posX: Math.floor((Math.random()*100) + 1),
+  // posY: Math.floor((Math.random()*100) + 1)
+posX: 10,
+posY: 0,
+};
+
 var Savasci = {
   posX: 0,
   posY: 0,
   diamond : 0,
   success : false,
 
-  move: function(direction) {
-    if(direction === 'forward'){
-      this.posX +=10;
+ move: function(direction) {
+    if (direction === 'forward') {
+      Savasci.posX += 10.0;
     }
     else if (direction === 'back'){
-      Savasci.posX -=10;
+      Savasci.posX -= 10;
     }
     else if (direction === 'up'){
-      Savasci.posY +=10;
+      Savasci.posY += 10;
     }
     else if (direction === 'down'){
-      Savasci.posY -=10;
+      Savasci.posY -= 10;
     }
-    //When Savasci is moving, Canavar is moving too.
-    Canavar.posX = Math.floor((Math.random()*100) + 1);
-    Canavar.posY = Math.floor((Math.random()*100) + 1);
-    console.log("Canavar is " + Canavar.posX + "," + Canavar.posY);
 
+   //When Savasci is moving, Canavar is moving too.
+    // Canavar.posX = Math.floor((Math.random()*10) + 1);
+    // Canavar.posY = Math.floor((Math.random()*10) + 1);
+
+   //Display where Canavar is
+    console.log('\n' + "Canavar is at " + Canavar.posX + "," + Canavar.posY);
     //Display where Savasci is
-    console.log("Savasci is " + Savasci.posX + "," + Savasci.posY);
+    console.log("Savasci is at " + Savasci.posX + "," + Savasci.posY);
 
-    // Checking if Savasci is near diamond, if so he should pick it up.
-    if (Savasci.posX === diamond.posX && Savasci.posY === diamond.posY) {
-      this.pickUp(Savasci, diamond);
-      this.diamond += 20; //Giving 20 diamonds whenever his position and diamond positions is the same.
-    }
-    else if (Savasci.posX === Canavar.posX && Savasci.posY === Canavar.posY) {
-      for (var i= 0; i < Canavar.health; i++){ // continue until i equals to Canavar.health
-        this.attack("Canavar"); // As rule, you are hitting two time to be more effective.
-        this.attack("Canavar");
-        Canavar.health -= 1; // Canavar is killed when its health is zero. Starting health of Canavar is 10.
+    console.log("Diamond is at " + diamond.posX + "," + diamond.posY);
+
+    //Check if Savasci has the same position as Canavar
+    if (Savasci.posX === Canavar.posX && Savasci.posY === Canavar.posY) {
+      for (var i= 1 ; Canavar.health > 0; i++) {
+        attack(Canavar);
+        attack(Canavar);
       }
+      Savasci.success = true;
+      console.log("The health of Canavar is " + Canavar.health + " . Congrats!, You Win....");
     }
-    else if (Canavar.health === 0)
-    Savasci.success = true;
-    console.log("You Win!. You have won " + Savasci.diamond + " diamonds. Congrats!" + '\n')
+
+   // Checking if Savasci is near diamond, if so he should pick it up.
+
+    if (Savasci.posX === diamond.posX && Savasci.posY === diamond.posY) {
+      pickUp(diamond);
+      pickUp(diamond);
+      console.log("You have " + Savasci.diamond + " diamonds in your pockets!");
+    }
+//    if (Canavar.health === 0) {
+//      console.log("Congrats!, You Win...." + '\n');
+//    }
+
   }
+
 };
 
-//Declaring diamond
-var diamond ={
-  posX: Math.floor((Math.random()*100) + 1),
-  posY: Math.floor((Math.random()*100) + 1)
+function attack(enemyName) {
+  // console.log(enemyName.health);
+  enemyName.health -= 1 ;
 }
-//Declaring Canavar
-var Canavar = {
-  posX: 0 ,
-  posY : 0,
-  success : false,
-  health : 10
-};
 
+function pickUp(what) {
+  // console.log(Savasci.diamond);
+  Savasci.diamond += 20; //Giving 20 diamonds whenever his position and diamond positions is the same.
+}
+
+Savasci.move('forward');
 Savasci.move('up');
-Savasci.move('right');
-
+Savasci.move('down');
+Savasci.move('back');
 
 // Refactored Code
 
