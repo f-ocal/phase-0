@@ -1,3 +1,4 @@
+//
 // Person 1 : Fatma - writing user stories
 //
 // User Story:
@@ -26,8 +27,7 @@
 
 // Person 3: Fatma - implementing into JS code
 
-// Add the finished solution here when you receive it.
-
+//Function for sum of array elements.
 function sum(numbers) {
   var sum = 0;
   for (var index = 0; index  < numbers.length; index++ ) {
@@ -35,14 +35,14 @@ function sum(numbers) {
   }
   return sum;
 }
-// console.log(sum([1, 2, 6]));
+console.log(sum([1, 2, 6]));
 
 //Function for mean of array elements.
 function mean(numbers) {
   var meanNumber = sum(numbers)/numbers.length; //calling sum function here.
   return meanNumber;
 }
-// console.log(mean([1, 2, 6]));
+console.log(mean([1, 2, 6]));
 
 //Function for median of array elements and considering the array length could be even or odd.
 function median(numbers) {
@@ -58,10 +58,10 @@ function median(numbers) {
     return numbers[medianIndex];
   }
 }
-// console.log(median([1, 6, 4, 7, 3])); //Checking for odd length of the array
-// console.log(median([1, 6, 2, 9, 5, 3])); //Checking for even length of the array
+console.log(median([1, 6, 4, 7, 3])); //Checking for odd length of the array
+console.log(median([1, 6, 2, 9, 5, 3])); //Checking for even length of the array
 
-// Person 4 : Shea
+// Person 4 : Shea - refactoring JS code
 
 // Refactored code
 
@@ -70,12 +70,12 @@ function median(numbers) {
 function sum(numbers) {
   return numbers.reduce((a, b) => a + b);
 };
-// console.log(sum([1, 2, 6]));
+console.log(sum([1, 2, 6]));
 // removed variable--just return the evaulation
 function mean(numbers) {
   return sum(numbers)/numbers.length;
 }
-// console.log(mean([1, 2, 6]));
+console.log(mean([1, 2, 6]));
 
 //Function for median of array elements and considering the array length could be even or odd.
 function median(numbers) {
@@ -91,79 +91,13 @@ function median(numbers) {
     return numbers[medianIndex];
   }
 }
-// console.log(median([1, 6, 4, 7, 3])); //Checking for odd length of the array
-// console.log(median([1, 6, 2, 9, 5, 3])); //Checking for even length of the array
+console.log(median([1, 6, 4, 7, 3])); //Checking for odd length of the array
+console.log(median([1, 6, 2, 9, 5, 3])); //Checking for even length of the array
 
-// __________________________________________
-// Tests:  Do not alter code below this line.
+// Person 5 : Fatma - Put it all together and run the code with the tests.
 
+//Summary
+/*
+There are 9 conditions within the test that checks the code. When I receive the refactored final code from Shea, I included entire code (both initial and refactored solution) into the test file. We did great job!!! Every tests have passed and outputs are true. We don't have any condition of false. I believe our code is very simple, clean and great in terms of readibility with descriptive method name. We first were considering to have nested or couple arrays; however after working on the user stories and pseudocode code again, we simplified and broke down the process into the steps. Our code now is very efficient from the processing time and memory allocation as we didn't define any new array. Well, it was very different challenge and it was rewarding, too. Congrats to our team :)))))
 
-oddLengthArray  = [1, 2, 3, 4, 5, 5, 7]
-evenLengthArray = [4, 4, 5, 5, 6, 6, 6, 7]
-
-
-function assert(test, message, test_number) {
-  if (!test) {
-    console.log(test_number + "false");
-    throw "ERROR: " + message;
-  }
-  console.log(test_number + "true");
-  return true;
-}
-
-// tests for sum
-assert(
-  (sum instanceof Function),
-  "sum should be a Function.",
-  "1. "
-)
-
-assert(
-  sum(oddLengthArray) === 27,
-  "sum should return the sum of all elements in an array with an odd length.",
-  "2. "
-)
-
-assert(
-  sum(evenLengthArray) === 43,
-  "sum should return the sum of all elements in an array with an even length.",
-  "3. "
-)
-
-// tests for mean
-assert(
-  (mean instanceof Function),
-  "mean should be a Function.",
-  "4. "
-)
-
-assert(
-  mean(oddLengthArray) === 3.857142857142857,
-  "mean should return the average of all elements in an array with an odd length.",
-  "5. "
-)
-
-assert(
-  mean(evenLengthArray) === 5.375,
-  "mean should return the average of all elements in an array with an even length.",
-  "6. "
-)
-
-// tests for median
-assert(
-  (median instanceof Function),
-  "median should be a Function.",
-  "7. "
-)
-
-assert(
-  median(oddLengthArray) === 4,
-  "median should return the median value of all elements in an array with an odd length.",
-  "8. "
-)
-
-assert(
-  median(evenLengthArray) === 5.5,
-  "median should return the median value of all elements in an array with an even length.",
-  "9. "
-)
+*/
