@@ -26,31 +26,59 @@ var Savasci = {
   posX: 0,
   posY: 0,
   diamond : 0,
-  success : false,
+  success : false
 };
 
-function displayFirstPerson(person) {
-  personFirst.school = "California High School"
-  console.log(personFirst.name);
-  console.log(personFirst.age);
-  console.log(personFirst.school);
+//Declaring diamond
+var diamond ={
+  posX: Math.floor((Math.random()*100) + 1),
+  posY: Math.floor((Math.random()*100) + 1)
 }
-displayFirstPerson(personFirst);
-
-
+//Declaring Canavar
 var Canavar = {
   posX: 0 ,
   posY : 0,
   success : false,
+  health : 10
 };
 
-function displaySecondPerson(personSecond){
-  personSecond.siblings = 2
-  console.log(personSecond.name);
-  console.log(personSecond.age);
-  console.log(personSecond.siblings);
-}
-displaySecondPerson(personSecond)
+move: function move(direction) {
+  if(direction === 'forward'){
+    this.posX +=10;
+  }
+  else if (direction === 'back'){
+    Savasci.posX -=10;
+  }
+  else if (direction === 'up'){
+    Savasci.posY +=10;
+  }
+  else if (direction === 'down'){
+    Savasci.posY -=10;
+  }
+  //When Savasci is moving, Canavar is moving too.
+  Canavar.posX = Math.floor((Math.random()*100) + 1);
+  Canavar.posY = Math.floor((Math.random()*100) + 1);
+  console.log("Canavar is " + Canavar.posX + "," + Canavar.posY);
+
+  //Display where Savasci is
+  console.log("Savasci is " + Savasci.posX + "," + Savasci.posY);
+
+  // Checking if Savasci is near diamond, if so he should pick it up.
+  if (Savasci.posX === diamond.posX && Savasci.posY == diamond.posY) {
+    Savasci.pickUp(Savasci, diamond);
+    Savasci.diamond += 20; //Giving 20 diamonds each time he pick them up
+  }
+  else if (Savasci.posX === Canavar.posX && Savasci.posY == Canavar.posY) {
+    for (var i= 0; i < Canavar.health; i++){
+      this.attack("Canavar"); // Rule is you need to hit 2 times to be more effective.
+      this.attack("Canavar");
+      Canavar.health -= 1; // Canavar is killed when its health is zero.
+    }
+  }
+  else if (Canavar.health === 0)
+  Savasci.success = true;
+  console.log("You Win!. You have won " + Savasci.diamond + "diamonds. Congrats!")
+};
 
 // Refactored Code
 
