@@ -100,4 +100,6 @@ console.log(median([1, 6, 2, 9, 5, 3])); //Checking for even length of the array
 /*
 There are 9 conditions within the test that checks the code. When I receive the refactored final code from Shea, I included entire code (both initial and refactored solution) into the test file. We did great job!!! Every tests have passed and outputs are true. We don't have any condition of false. I believe our code is very simple, clean and great in terms of readibility with descriptive method name. We first were considering to have nested or couple arrays; however after working on the user stories and pseudocode code again, we simplified and broke down the process into the steps. Our code now is very efficient from the processing time and memory allocation as we didn't define any new array. Well, it was very different challenge and it was rewarding, too. Congrats to our team :)))))
 
+The link for test file is https://github.com/f-ocal/phase-0/blob/master/week-7/group-project/test.js to run the test. 
+
 */

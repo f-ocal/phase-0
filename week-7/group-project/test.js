@@ -25,7 +25,6 @@
 // Else identify the two middle-most elements and return their average.
 
 // Person 3: Fatma - implementing into JS code
-
 // Add the finished solution here when you receive it.
 
 function sum(numbers) {
