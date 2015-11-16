@@ -14,7 +14,18 @@
     console.log(two); //-> This produces 2
 
 // Complete one of the exercises: Looping a Triangle, FizzBuzz, or Chess Board
-/*  Pseudocode for FizzBuzz problem.
+    var pound = "#"
+    for (var counter = 0; counter < 7; counter++) {
+      console.log(pound);
+      pound += "#";
+    }
+
+//  favorite food
+    var fav_food = prompt("What is your favorite food?");
+    alert("Hey! That's my favorite too!");
+
+
+/*  //FizzBuzz
     The range is from 1 to 100.
     Increment the number with 1 to check all the numbers.
     for numbers divisible by 3, print "Fizz" instead of that number.
@@ -32,18 +43,34 @@
       console.log(number);
     }
 
-// Functions
+    //Chess Board
+    var size = 16
+    for (var counter = 0; counter < (size / 2); counter++) {
+        console.log("# # # #\n");
+        console.log(" # # # #\n");
+    }
 
-// Complete the `minimum` exercise.
+    // Functions
 
-
+    // Complete the `minimum` exercise.
+    function min(a, b) {
+      if (a < b)
+        return a;
+      else
+        return b;
+    }
+    console.log(min(6,4));
 
 // Data Structures: Objects and Arrays
 
-
 // Create an object called "me" that stores your name, age, 3 favorite foods, and a quirk below.
-
-
+var me = {
+  name: "Fatma",
+  age: 31,
+  favoriteFoods: ["bean", "spinach", "Turkish soup"],
+  quirk: "Hhmm.."
+}
+console.log(me)
 
 // REFLECTIONS:
 
@@ -105,7 +132,7 @@
 //
 // Write a short program that asks for a user to input their favorite food. After they hit return, have the program respond with "Hey! That's my favorite too!" (You will probably need to run this in the Chrome console (Links to an external site.) rather than node since node does not support prompt or alert). Paste your program into the eloquent.js file.
       // The solution is:
-      //     prompt("What is your favorite food?"," ");
+      //     var fav_food = prompt("What is your favorite food?", " ");
       //     alert("Hey! That's my favorite too!");
 
 
@@ -150,20 +177,19 @@
       // bar();   // the output is 3
       // bar      //function
 
-Complete the minimum exercise in the eloquent.js file.
+// Complete the minimum exercise in the eloquent.js file.
+// Please see top of the page.
 
+//Ch.4  Data Structures: Objects and and Arrays
 
-Ch.4  Data Structures: Objects and and Arrays
+//What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
+  //Accessing members with . is dot notation and accessing with [] is bracket notation. To start with dot notation, it only works with property names. Bracket notation expects an experssion which evaluates to a string, so so you can use any character sequenceas poperty name.
 
-Skip the sections on the Lycanthropes log, Computing Correlations, and sections from Further Arrayology to the Global Object, but read the chapter summary.
+// Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
+// please see top of the page.
 
-What is the difference between using a dot and a bracket to look up a property? Ex. array.max vs array["max"]
-
-Create an object called me that stores your name, age, three favorite foods, and a quirk in your eloquent.js file.
-me = {name: Fatma, age: 31, favorite foods: beans, spinach and Turkish soop and quirk: }
-
-What is a JavaScript object with a name and value property similar to in Ruby?
-
+//What is a JavaScript object with a name and value property similar to in Ruby?
+//Numbers, Booleans, and strings are the bricks that data structures are built from. But you cant make much of a house out of a single brick. Objects allow programmers to group values such as numbers, strings, Booleans including other objects together to build more complex structure.
 
 // Release 2:
 /*
