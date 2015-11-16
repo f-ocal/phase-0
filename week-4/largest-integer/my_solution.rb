@@ -32,6 +32,13 @@ def largest_integer(list_of_numbers)
   largest_number
 end
 
+# Another Solution to find the largest number
+def largest_integer(list_of_nums)
+  list_of_nums.sort!
+  list_of_nums.reverse!
+  return list_of_nums[0]
+end
+
 #Refactored Solution
 def largest_integer(list_of_numbers)
   list_of_numbers.max
