@@ -134,11 +134,16 @@ function collectDiamonds(receivingPerson, target) {
     target.diamond = 0;
   }
 }
-printAllLocations();
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 var util = require('util');
+
+
+console.log('\n'+ " ----------- Welcome to my game ------------------"+ '\n');
+console.log("At the begining of the game, you will be provided with the information of where hero, enemy and diamond are located with x and y coordinates." +'\n'+"You need to type initials of each direction to go to the north, south, west and east to collect the diamond or to attack the enemy. (If you want to go to the north, just type 'n')" + '\n' + "Some Clues, you need to type 'e' to go and collect the diamond, don't forget the keyword otherwise you can't pick up the diamond. (The keyword is diamond)" + '\n' + "When you attack the enemy, Be careful!!! Because enemy can attack you back. Don't forget to pick up diamonds, otherwise enemy will pick up your diamonds. Good Luck!!!" + '\n');
+
+printAllLocations();
 
 process.stdin.on('data', function (text) {
   movePerson(hero, text);
