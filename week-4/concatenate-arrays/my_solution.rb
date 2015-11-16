@@ -25,3 +25,9 @@ def array_concat(array_1, array_2)
   array_1.concat(array_2)
 end
 puts array_concat(['5','4'],['3','apple'])
+
+# Another solution to concat the arrays
+
+# def array_concat(array_1, array_2)
+#   return array_1 + array_2
+# end
