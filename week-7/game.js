@@ -159,14 +159,18 @@ function done() {
 }
 
 // Refactored Code
-
-
-
+//I have tried to refactor but unfortunately I dont know a lot of very cool method to refactor yet. I think variables and methods are very clear.
 
 // Reflection
 /*
 What was the most difficult part of this challenge?
+It was really challenging to think about real world behaviours, functions and converting them to code. For instance, attacks that were happening between hero and enemy. I had taken lots of thinking, trial, revision to make it work.
+
 What did you learn about creating objects and functions that interact with one another?
+I have had 3 objects with various properties and different functions for each object behaviours. Some of the functions are collecting diamonds, attacking each other, printing locations, displaying the numbers of diamonds. I called different functions within the functions by typing the function name and passing the number of arguments as required.
+
 Did you learn about any new built-in methods you could use in your refactored solution? If so, what were they and how do they work?
-How can you access and manipulate properties of objects?
+I didn't learn any new methods that I could use for refactored solution.
+
+How can you access and manipulate properties of objects? I access the properties of the objects by typing `object.nameOfTheProperty`. For instance, hero.health or enemy.health...
 */
