@@ -33,6 +33,16 @@ end
 # array = [13,41,6]
 # array.length = 3
 
+#Another Solution
+
+def count_between(list_of_integers, lower_bound, upper_bound)
+  if lower_bound > upper_bound
+    return 0
+  else
+    list_of_integers.count { |num| (lower_bound..upper_bound).include?(num)}
+  end
+end
+
 # #Refactored Solution
 
 def count_between(list_of_integers, lower_bound, upper_bound)

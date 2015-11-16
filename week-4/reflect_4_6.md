@@ -21,12 +21,15 @@ Arrays are structured in such a way that ordered and in a list of row. Array hol
 ### Based on what you've learned, what is the best way to access values in a hash?
 looking up to the key which returns the values.
 ### What are some important things to remember about hash keys and uniqueness?
-Hash is a pair of key and value to remember. As researched, hashes are called dictionaries in Python. I think it might be easy to think this way, because a dictionary has a word (key) and its definition (value).
+
+Hash is a pair of key and value to remember. As researched, hashes are called dictionaries in Python. I think it might be easy to think this way, because a dictionary has a word (key) and its definition (value). The key must be a unique identifier, and you can't have several key's with the same name, in the same hash. the value doesn't have to be unique, but the key does. That being said, if you have a value that is repeated under a different key, and you invert the hash, one of the key-value pairs will be destroyed because keys must have a unique name.
 
 ### What are the main differences between arrays and hashes? When do you think one will be better over the other?
 You can think of an array as an simple list, let's say like a shopping list. You can look up the information by using the number it comes in on the list, like, in my shopping list, apple is the first item, second item is lemons etc. Array doesn't have a pair of information. However, you can think of a hash as a collection of pairs of information, and each pair is made of a name and a value.
 The name is called a key, and it must be unique. You use the key to return the value paired to it.
 So for a shopping list, it'd be more like a list that each item has a specific return value. They are like a tables, when you look at the hash table, you will see next to "fish" it said "salmon".
+
+The biggest differences are going to be the methods used on each, and also the way they store information. Arrays are ordered lists, and can be used that way. Hashes are like dictionaries, where each key is matched to a value. I think they will both be useful, as they have very different uses I wouldn't say one will be better than the other. I will say that I think Hashes can be more complicated to work with, and it can be challenging trying to remember which methods accompany which object, especially if you don't use them both every day.
 
 In terms of computer performance, hashes in Ruby are said to be very fast for looking up information compared to arrays.
 

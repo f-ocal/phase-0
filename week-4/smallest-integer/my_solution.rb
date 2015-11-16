@@ -32,6 +32,12 @@ def smallest_integer(list_of_numbers)
   smallest_number
 end
 
+# Another solution to find the smallest integer
+def smallest_integer(list_of_nums)
+  list_of_nums.sort!
+  return list_of_nums[0]
+end
+
 # #Refactored Solution
 def smallest_integer(list_of_numbers)
   list_of_numbers.min
