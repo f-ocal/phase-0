@@ -6,17 +6,32 @@
 
 // Release 1: Bulk Up
 
-var athlete1 = {name: "Sarah Hughes", event: "Ladies Singles"}
-var athlete2 = {name: "Bob Hughes", event: "Mens Singles"}
-var athletes = [athlete1, athlete2]
+var athletes = [
+{name: "Sarah Hughes", event: "Ladies Singles"},
+{name:"Bob Hughes", event: "Mens Singles"}
+]
 
-function eventWon(athletes) {
- for (var i=0; i < athletes.length; i++) {
-   athletes[i].win = athletes[i].name + " won the event " + athletes[i].event;
-   console.log(athletes[i].win);
- }
+function eventWon(athletes_array) {
+  for (var i=0; i < athletes_array.length; i++) {
+    athletes_array[i].win = athletes_array[i].name + " won the event " + athletes_array[i].event;
+    console.log(athletes[i].win)
+  }
 }
 eventWon(athletes)
+
+//Another Solution
+
+// var athlete1 = {name: "Sarah Hughes", event: "Ladies Singles"}
+// var athlete2 = {name: "Bob Hughes", event: "Mens Singles"}
+// var athletes = [athlete1, athlete2]
+//
+// function eventWon(athletes) {
+//  for (var i=0; i < athletes.length; i++) {
+//    athletes[i].win = athletes[i].name + " won the event " + athletes[i].event;
+//    console.log(athletes[i].win);
+//  }
+// }
+// eventWon(athletes)
 
 
 // Release 2: Jumble your words
@@ -31,12 +46,13 @@ reverseString(string)
 // Release 3: 2, 4, 6 ,8! Who do we appreciate?
 
 var evenArray =[]
+
 function evenNumbers(array){
-for (var i=0; i < array.length; i++){
- if(array[i] % 2 == 0){
-   evenArray.push(array[i])
-   }
- }
+  for (var i=0; i < array.length; i++){
+    if(array[i] % 2 == 0){
+      evenArray.push(array[i])
+    }
+  }
  console.log(evenArray)
 }
 evenNumbers([1,2,3,4,5,6])
