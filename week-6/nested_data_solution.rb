@@ -77,10 +77,10 @@ p startup_names
 
 
 # Refactored Solution done by me.
+
 # startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
 # p startup_names.flatten.map { |element| element + "ly"}
 # # this destructs the nested data structure so elements are return as within single array after including +ly.
-
 
 
 # # Another refactored Solution
@@ -99,8 +99,17 @@ p startup_names
 # }
 # print startup_names
 
-
-
+# Refactored Solution for above refactored solution ;)))
+# startup_names = ["bit", ["find", "fast", ["optimize", "scope"]]]
+# def recursive_method(array)
+#   array.map! do |e|
+#     if e.kind_of?(Array)
+#       recursive_method(e)
+#     else e << "ly"
+#     end
+#   end
+# end
+# recursive_method(startup_names)
 
 
 # REFLECTION
