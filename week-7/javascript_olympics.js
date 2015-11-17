@@ -12,9 +12,10 @@ var athletes = [
 ]
 
 function eventWon(athletes_array) {
+  //for (var i in athletes_array) {} Another way of writing.
   for (var i=0; i < athletes_array.length; i++) {
     athletes_array[i].win = athletes_array[i].name + " won the event " + athletes_array[i].event;
-    console.log(athletes[i].win)
+    console.log(athletes[i].win);
   }
 }
 eventWon(athletes)
