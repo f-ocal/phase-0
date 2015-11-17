@@ -45,9 +45,21 @@
     result=result + "."
     result.capitalize!
   end
+
+# Another Solution 
+  def total(array)
+    array.inject {|sum, x| sum+=x}
+  end
+
 # 6. sentence_maker refactored solution
 
   def sentence_maker(my_sentence)
     result=my_sentence.join(" ")
     result=result.capitalize + "."
+  end
+
+# 2nd Refactored Solution
+
+  def sentence_maker(array)
+    array.join(" ").capitalize+"."
   end

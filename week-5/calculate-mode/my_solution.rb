@@ -62,7 +62,13 @@ def mode(array)
 end
 mode([1,2,3,3,4,4,5])
 
+# Another way for refactoring
 
+def mode(mode)
+  mode_return = mode.inject({}) { |k, v| k[v] = mode.count(v); k }
+  mode_return.select { |k,v| v == mode_return.values.max }.keys
+end
+mode([1,2,3,3,4,4,5])
 
 # 4. Reflection
 # Which data structure did you and your pair decide to implement and why?
@@ -75,4 +81,4 @@ mode([1,2,3,3,4,4,5])
 # => At first, we had some challenge on checking if array's value is already a key in the hash. After thinking on the steps carefully, we found out that it was only syntax problem and we could easily fixed it.
 
 # What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
-# => We used .each method to iterater through at the initial solution. Then, we found .select method to iterate through each element of the hash. it was very easy to implement. 
+# => We used .each method to iterater through at the initial solution. Then, we found .select method to iterate through each element of the hash. it was very easy to implement.

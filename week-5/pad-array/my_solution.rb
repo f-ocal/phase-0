@@ -40,6 +40,18 @@ def pad(array, min_size, value = nil)
 end
 pad(['a','b'],5,'filling')
 
+# Another solution
+# Destructive
+def pad!(array, min_size, value = nil)
+  array.push(value) while array.length < min_size
+  return array
+end
+# Non-Destructive
+def pad(array, min_size, value = nil)
+  new_array = array.clone
+  pad!(new_array, min_size, value)
+  return new_array
+end
 
 #4. Reflection
 # Were you successful in breaking the problem down into small steps?
