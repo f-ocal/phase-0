@@ -157,12 +157,18 @@ console.log(officers);         // This prints out the final elected positions an
 /* Reflection
 
 What did you learn about iterating over nested objects in JavaScript?
+  This challenge has nested hashes, we iterate through each key/value pair with for loop and check
+  the condition. It is similar to nested hashes and arrays in Ruby; we did if ..else statement by
+  checking each condition if votes are equals to the positions, capturing value once the key matches
+  with one of the positions. We found better way to refactor all of these if else.. statements by
+  ony checking if the position has the value that matches with the position of the vote keys. It
+  worked great, the code is more concise and iterate through hash.
 
 Were you able to find useful methods to help you with this?
+  Yeah, we found .hasOwnProperty method which is similar to include method in Ruby.
 
 What concepts were solidified in the process of working through this challenge?
-
-
+  I am very solidified with iterating through hashes, nested hashes in JavaScript.
 
 */
 
