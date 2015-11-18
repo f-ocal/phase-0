@@ -7,8 +7,9 @@
 # Write your comments on what each thing is doing.
 # If you have difficulty, go into IRB and play with the methods.
 
+class Cipher
 # defining an function called dr_evils_cipher which takes a single argument, an input of coded message.
-def dr_evils_cipher(coded_message)
+def self.dr_evils_cipher(coded_message)
   #downcasing all the messaages and splitting them for each character. The result will be in this syntax ["m", "^", "a", "e", "r", "x", "%", "e", "&", "g", "s", "o", "i", "!"], this result equals to input, which is the single-character of strings.
   input = coded_message.downcase.split("")
   #declaring an empty array called decoded_sentence.
@@ -68,6 +69,7 @@ def dr_evils_cipher(coded_message)
   #It is returning the final joint string after replacing each characters with other characters which were taken based on the if, elsif statements.
 end
 
+end
 # Your Refactored Solution
 
 
@@ -85,14 +87,14 @@ end
 
 
 # Driver Test Code:
-p dr_evils_cipher("m^aerx%e&gsoi!") == "i want a coke!" #This is driver test code and should print true
+p Cipher.dr_evils_cipher("m^aerx%e&gsoi!") == "i want a coke!" #This is driver test code and should print true
 # Find out what Dr. Evil is saying below and turn it into driver test code as well. Driver test code statements should always return "true."
-p dr_evils_cipher("syv%ievpc#exxiqtxw&ex^e$xvegxsv#fieq#airx%xlvsykl$wizivep#tvitevexmsrw.#tvitevexmsrw#e*xlvsykl#k&aivi%e@gsqtpixi&jempyvi.
+p Cipher.dr_evils_cipher("syv%ievpc#exxiqtxw&ex^e$xvegxsv#fieq#airx%xlvsykl$wizivep#tvitevexmsrw.#tvitevexmsrw#e*xlvsykl#k&aivi%e@gsqtpixi&jempyvi.
 &fyx%rsa,$pehmiw@erh#kirxpiqir,%ai%jmreppc@lezi&e&asvomrk%xvegxsv#fieq,^almgl^ai^wlepp%gepp@tvitevexmsr^l")== "our early attempts at a tractor beam went through several preparations. preparations a through g were a complete failure.\n but now, ladies and gentlemen, we finally have a working tractor beam, which we shall call preparation h"
-p dr_evils_cipher("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi%xs#gepp%e^hiexl#wxev.") == "you see, i've turned the moon into what i like to call a death star."
-p dr_evils_cipher("qmrm#qi,*mj^m#iziv^pswx#csy#m^hsr'x%orsa^alex@m%asyph^hs.
+p Cipher.dr_evils_cipher("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi%xs#gepp%e^hiexl#wxev.") == "you see, i've turned the moon into what i like to call a death star."
+p Cipher.dr_evils_cipher("qmrm#qi,*mj^m#iziv^pswx#csy#m^hsr'x%orsa^alex@m%asyph^hs.
 @m'h%tvsfefpc%qszi$sr%erh*kix#ersxliv$gpsri@fyx*xlivi@asyph^fi@e^15&qmryxi@tivmsh%xlivi$alivi*m*asyph&nywx^fi$mrgsrwspefpi.") == "mini me, if i ever lost you i don't know what i would do.\n i'd probably move on and get another clone but there would be a 15 minute period there where i would just be inconsolable."
-p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
+p Cipher.dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
 
 # Reflection
 
