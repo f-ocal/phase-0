@@ -130,8 +130,10 @@ p DrEvilCipher.new.decode_string("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmpp
 # Reflection
 
 # What concepts did you review or learn in this challenge?
-# It was very interesting and fun challenge. I learn about zip method.
+  # This challenge was very interesting and fun. I learn about zip, rotate methods which they were great refactoring to replace the cipher hash. Another help was to_h so that it creates a new hash when combine both arrays and return a single array.
 
 # What is still confusing to you about Ruby?
-#
+  # I feel that I am very confident with Ruby code, I also noticed that I enjoyed refactoring. I did good job on this! I refactored 50 lines of code with  18 lines so I am so proud that the readability has been improved and it look more clean, clear within a class by calling different methods.
+
 # What are you going to study to get more prepared for Phase 1?
+  # I think I should practice more and get familiar with methods and classess.
