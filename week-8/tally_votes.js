@@ -1,9 +1,10 @@
-// Tally Votes in JavaScript Pairing Challenge.
+//8.3 Tally Votes in JavaScript Pairing Challenge.
 
-// I worked on this challenge with:
+// I worked on this challenge with
 // This challenge took me [#] hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
+
 var votes = {
   "Alex": { president: "Bob", vicePresident: "Devin", secretary: "Gail", treasurer: "Kerry" },
   "Bob": { president: "Mary", vicePresident: "Hermann", secretary: "Fred", treasurer: "Ivy" },
@@ -31,7 +32,7 @@ var votes = {
   "Xavier": { president: "Steve", vicePresident: "Hermann", secretary: "Fred", treasurer: "Ivy" },
   "Yvonne": { president: "Bob", vicePresident: "Zane", secretary: "Fred", treasurer: "Hermann" },
   "Zane": { president: "Louise", vicePresident: "Hermann", secretary: "Fred", treasurer: "Mary" }
-}
+};
 
 // Tally the votes in voteCount.
 var voteCount = {
@@ -39,61 +40,132 @@ var voteCount = {
   vicePresident: {},
   secretary: {},
   treasurer: {}
-}
-
-/* The name of each student receiving a vote for an office should become a property
-of the respective office in voteCount.  After Alex's votes have been tallied,
-voteCount would be ...
-
-  var voteCount = {
-    president: { Bob: 1 },
-    vicePresident: { Devin: 1 },
-    secretary: { Gail: 1 },
-    treasurer: { Kerry: 1 }
-  }
-
-*/
+};
 
 
-/* Once the votes have been tallied, assign each officer position the name of the
-student who received the most votes. */
 var officers = {
   president: undefined,
   vicePresident: undefined,
   secretary: undefined,
   treasurer: undefined
-}
+};
 
 // Pseudocode
+// Input: votes objects
+// Output: Officers objects who are the winners.
+// Define method (maybe tally votes) nested for loop that if key already exists, count the tally.
+// If it doesn't exist, create the key with value of 1.
+//  key = voter
+//  prop = office
+//  votes[key][prop] = vote
+// console.log(votes);
+//  console.log(voteCount);
 
-
-// __________________________________________
+//________________________________
 // Initial Solution
 
-
-
-
-
+// for (var key in votes){
+//
+//   for (var prop in votes[key]) {
+//
+//     if (prop == "president"){
+//
+//       if (voteCount['president'].hasOwnProperty(votes[key][prop])){
+//         voteCount['president'][votes[key][prop]] += 1;
+//       }
+//       else {
+//         voteCount['president'][votes[key][prop]] = 1;
+//       }
+//     }
+//
+//     if (prop == "vicePresident"){
+//
+//       if (voteCount['vicePresident'].hasOwnProperty(votes[key][prop])){
+//         voteCount['vicePresident'][votes[key][prop]] += 1;
+//       }
+//       else {
+//         voteCount['vicePresident'][votes[key][prop]] = 1;
+//       }
+//     }
+//
+//     if (prop == "secretary"){
+//       if (voteCount['secretary'].hasOwnProperty(votes[key][prop])){
+//         voteCount['secretary'][votes[key][prop]] += 1;
+//       }
+//       else {
+//         voteCount['secretary'][votes[key][prop]] = 1;
+//       }
+//     }
+//
+//     if (prop == "treasurer") {
+//       if (voteCount['treasurer'].hasOwnProperty(votes[key][prop])){
+//         voteCount['treasurer'][votes[key][prop]] += 1;
+//       }
+//       else {
+//         voteCount['treasurer'][votes[key][prop]] = 1;
+//       }
+//     }
+//   }
+// }
+//
+// for (var k in voteCount){
+//   var max = 0;
+//   for (var p in voteCount[k]){
+//     if (voteCount[k][p] > max ) {
+//       max = voteCount[k][p];
+//       officers[k] = p;
+//     }
+//   }
+// }
+//
+// console.log(officers);  // This prints out the final elected positions and who won.
 
 
 // __________________________________________
 // Refactored Solution
 
+//  key = voter
+//  prop = office
+//  votes[key][prop] = vote
 
+for (var key in votes){
 
+ for (var prop in votes[key]) {
 
+   if (voteCount[prop].hasOwnProperty(votes[key][prop])){
+     voteCount[prop][votes[key][prop]] += 1;
+   }
+   else {
+     voteCount[prop][votes[key][prop]] = 1;
+   }
+ }
+}
 
+for (var k in voteCount){
+  var max = 0;
+  for (var p in voteCount[k]){
+    if (voteCount[k][p] > max ) {
+      max = voteCount[k][p];
+      officers[k] = p;
+    }
+  }
+}
+console.log(officers);         // This prints out the final elected positions and who won.
 
 // __________________________________________
+
 /* Reflection
 
 What did you learn about iterating over nested objects in JavaScript?
+
 Were you able to find useful methods to help you with this?
+
 What concepts were solidified in the process of working through this challenge?
 
 
 
 */
+
 // __________________________________________
 // Test Code:  Do not alter code below this line.
 
