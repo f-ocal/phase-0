@@ -21,7 +21,9 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Write your code below.
+
 var gradebook = {}; //Creating a variable that equals to the empty object.
+
 gradebook = {
               "Joseph": {testScores: scores[0] },
               "Susan": {testScores: scores[1] },
@@ -54,15 +56,18 @@ function average(numbers){
 /* Reflect
 
 What did you learn about adding functions to objects?
-  We can add additional functions to the objects, like hash including keys and values. We can even call add further functions (such as addScore, getAverage) to operate some code in the body.
+  We can add additional functions to the objects, like hash including keys
+  and values. We can even call add further functions (such as addScore, getAverage)
+  to operate some code in the body.
 
 How did you iterate over nested arrays in JavaScript?
-  We treated just like hash, asking for the values of the keys so in this case it was grades for each students.
+  We treated just like hash, asking for the values of the keys so in this case
+  it was grades for each students.
 
 Were there any new methods you were able to incorporate? If so, what were they and how did they work?
-  Not really, we just forgat to include return on line 37 while calling average functions. It was interesting we didn't notice that was the problem so we double checked every functions, then finally we found the problem. 
-
-
+  Not really, we just forgat to include return on line 37 while calling average
+  functions. It was interesting we didn't notice that was the problem so we double
+  checked every functions, then finally we found the problem.
 
 */
 // __________________________________________
