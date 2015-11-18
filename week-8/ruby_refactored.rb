@@ -1,12 +1,5 @@
 # Cipher Challenge
 
-# I worked on this challenge by myself.
-# I spent 1 hours on this challenge.
-
-# 1. Solution
-# Write your comments on what each thing is doing.
-# If you have difficulty, go into IRB and play with the methods.
-
 class DrEvilCipher
 
   def decode_string(coded_message)
@@ -41,12 +34,3 @@ p DrEvilCipher.new.decode_string("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi
 p DrEvilCipher.new.decode_string("qmrm#qi,*mj^m#iziv^pswx#csy#m^hsr'x%orsa^alex@m%asyph^hs.
 @m'h%tvsfefpc%qszi$sr%erh*kix#ersxliv$gpsri@fyx*xlivi@asyph^fi@e^15&qmryxi@tivmsh%xlivi$alivi*m*asyph&nywx^fi$mrgsrwspefpi.") == "mini me, if i ever lost you i don't know what i would do.\n i'd probably move on and get another clone but there would be a 15 minute period there where i would just be inconsolable."
 p DrEvilCipher.new.decode_string("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
-
-  # Reflection
-
-  # What concepts did you review or learn in this challenge?
-  # It was very interesting and fun challenge. I learn about zip method.
-
-  # What is still confusing to you about Ruby?
-  #
-  # What are you going to study to get more prepared for Phase 1?
