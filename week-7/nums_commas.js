@@ -50,7 +50,24 @@ function separateComma(integer) {
 }
 separateComma(1569743)
 
+//Another Solution for refactored
 
+var separateComma = function(int){
+  var result = "";
+  var newint = int.toString();
+  var length = newint.length;
+  var i = 0;
+  while (length > 0) {
+        result += newint.charAt(i); // This new charAt method returns the character at the specified index in a string. For example, Hello if you say charAt(0) -> the result is H.
+        length -= 1
+        if ((length % 3 == 0) && (length != 0)) {
+          result += ',';
+        };
+    i += 1
+  }
+  console.log(result)
+}
+separateComma(1000000)
 // Your Own Tests (OPTIONAL)
 
 
