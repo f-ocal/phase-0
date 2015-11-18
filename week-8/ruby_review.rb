@@ -1,7 +1,7 @@
 # Cipher Challenge
 
 # I worked on this challenge by myself.
-# I spent 1 hours on this challenge.
+# I spent 1,5 hours on this challenge.
 
 # 1. Solution
 # Write your comments on what each thing is doing.
@@ -68,31 +68,64 @@ def dr_evils_cipher(coded_message)
   #It is returning the final joint string after replacing each characters with other characters which were taken based on the if, elsif statements.
 end
 
-# Your Refactored Solution
+########################### My Refactored Solution ######################
 
+class DrEvilCipher
 
+  def decode_string(coded_message)
+    input = coded_message.downcase.split("")
+    input.map { |x| decode_character(x) }.join
+  end
+
+  def decode_character(encoded_character)
+    decoded_character = cipher_lookup(encoded_character)
+
+    if decoded_character.nil?
+      decoded_character = %w(@ # $ % ^ & *).include?(encoded_character) ? " " : encoded_character
+    end
+    decoded_character
+  end
+
+  private
+
+  def cipher_lookup(encoded_character)
+    alphabet = ('a'..'z').to_a
+    rotated_alphabet = alphabet.rotate(4)
+    cipher = rotated_alphabet.zip(alphabet).to_h
+    cipher[encoded_character]
+  end
+end
+
+# Driver Test Code:
+p DrEvilCipher.new.decode_string("m^aerx%e&gsoi!") == "i want a coke!"
+p DrEvilCipher.new.decode_string("syv%ievpc#exxiqtxw&ex^e$xvegxsv#fieq#airx%xlvsykl$wizivep#tvitevexmsrw.#tvitevexmsrw#e*xlvsykl#k&aivi%e@gsqtpixi&jempyvi.
+&fyx%rsa,$pehmiw@erh#kirxpiqir,%ai%jmreppc@lezi&e&asvomrk%xvegxsv#fieq,^almgl^ai^wlepp%gepp@tvitevexmsr^l")== "our early attempts at a tractor beam went through several preparations. preparations a through g were a complete failure.\n but now, ladies and gentlemen, we finally have a working tractor beam, which we shall call preparation h"
+p DrEvilCipher.new.decode_string("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi%xs#gepp%e^hiexl#wxev.") == "you see, i've turned the moon into what i like to call a death star."
+p DrEvilCipher.new.decode_string("qmrm#qi,*mj^m#iziv^pswx#csy#m^hsr'x%orsa^alex@m%asyph^hs.
+@m'h%tvsfefpc%qszi$sr%erh*kix#ersxliv$gpsri@fyx*xlivi@asyph^fi@e^15&qmryxi@tivmsh%xlivi$alivi*m*asyph&nywx^fi$mrgsrwspefpi.") == "mini me, if i ever lost you i don't know what i would do.\n i'd probably move on and get another clone but there would be a 15 minute period there where i would just be inconsolable."
+p DrEvilCipher.new.decode_string("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
+
+# # Driver Test Code:
+# p dr_evils_cipher("m^aerx%e&gsoi!") == "i want a coke!" #This is driver test code and should print true
+# # Find out what Dr. Evil is saying below and turn it into driver test code as well. Driver test code statements should always return "true."
+# p dr_evils_cipher("syv%ievpc#exxiqtxw&ex^e$xvegxsv#fieq#airx%xlvsykl$wizivep#tvitevexmsrw.#tvitevexmsrw#e*xlvsykl#k&aivi%e@gsqtpixi&jempyvi.
+# &fyx%rsa,$pehmiw@erh#kirxpiqir,%ai%jmreppc@lezi&e&asvomrk%xvegxsv#fieq,^almgl^ai^wlepp%gepp@tvitevexmsr^l")== "our early attempts at a tractor beam went through several preparations. preparations a through g were a complete failure.\n but now, ladies and gentlemen, we finally have a working tractor beam, which we shall call preparation h"
+# p dr_evils_cipher("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi%xs#gepp%e^hiexl#wxev.") == "you see, i've turned the moon into what i like to call a death star."
+# p dr_evils_cipher("qmrm#qi,*mj^m#iziv^pswx#csy#m^hsr'x%orsa^alex@m%asyph^hs.
+# @m'h%tvsfefpc%qszi$sr%erh*kix#ersxliv$gpsri@fyx*xlivi@asyph^fi@e^15&qmryxi@tivmsh%xlivi$alivi*m*asyph&nywx^fi$mrgsrwspefpi.") == "mini me, if i ever lost you i don't know what i would do.\n i'd probably move on and get another clone but there would be a 15 minute period there where i would just be inconsolable."
+# p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
+
+# Some Tricks for shifting the letter in the alphabet***************************
 # alphabet = ('a'..'z').to_a # This print of all alphabet. ['a','b','c', 'd']
 # rotated_alphabet = ('a'..'z').to_a.rotate(4) # this prints the alphabet starting from 'e', 'f', ..
 # cipher = {}
 # rotated_alphabet.zip(alphabet).to_h
+
 # This is another solution for cipher hash.
 # rotated_alphabet.each_with_index do |letter, index|
 #   cipher[letter] = alphabet[index]
 # end
-
-
-
-
-
-# Driver Test Code:
-p dr_evils_cipher("m^aerx%e&gsoi!") == "i want a coke!" #This is driver test code and should print true
-# Find out what Dr. Evil is saying below and turn it into driver test code as well. Driver test code statements should always return "true."
-p dr_evils_cipher("syv%ievpc#exxiqtxw&ex^e$xvegxsv#fieq#airx%xlvsykl$wizivep#tvitevexmsrw.#tvitevexmsrw#e*xlvsykl#k&aivi%e@gsqtpixi&jempyvi.
-&fyx%rsa,$pehmiw@erh#kirxpiqir,%ai%jmreppc@lezi&e&asvomrk%xvegxsv#fieq,^almgl^ai^wlepp%gepp@tvitevexmsr^l")== "our early attempts at a tractor beam went through several preparations. preparations a through g were a complete failure.\n but now, ladies and gentlemen, we finally have a working tractor beam, which we shall call preparation h"
-p dr_evils_cipher("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi%xs#gepp%e^hiexl#wxev.") == "you see, i've turned the moon into what i like to call a death star."
-p dr_evils_cipher("qmrm#qi,*mj^m#iziv^pswx#csy#m^hsr'x%orsa^alex@m%asyph^hs.
-@m'h%tvsfefpc%qszi$sr%erh*kix#ersxliv$gpsri@fyx*xlivi@asyph^fi@e^15&qmryxi@tivmsh%xlivi$alivi*m*asyph&nywx^fi$mrgsrwspefpi.") == "mini me, if i ever lost you i don't know what i would do.\n i'd probably move on and get another clone but there would be a 15 minute period there where i would just be inconsolable."
-p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
+# *************************
 
 # Reflection
 
