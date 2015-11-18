@@ -4,6 +4,7 @@
 # I spent 1,5 hours on this challenge.
 
 # 1. Solution
+
 # Write your comments on what each thing is doing.
 # If you have difficulty, go into IRB and play with the methods.
 
@@ -43,7 +44,7 @@ def dr_evils_cipher(coded_message)
             "d" => "z"}
 
   input.each do |x| # Iterating through each element of input array. As line 14, the input is the lowercase of single character strings.
-    found_match = false  # Why would this be assigned to false from the outset? What happens when it's true?????
+    found_match = false  # this is set to false at initial so on line 64, any condition that doesn't meet the previous if elsif conditions, line 68 will be executed.
     cipher.each_key do |y| # .each_key is calling the block once for each key in hash, cipher.
       if x == y  # This is comparing the strings of the input (x) with key from the hash if they are equal. The input is lowercase, single string character e.g. "m" checking if this value equals to the key of the chiper.
         decoded_sentence << cipher[y] # If input single character is equals to the key, then we are taking the value of that key and pushing into earlier defined array, decoded_sentence line 16.
@@ -60,7 +61,7 @@ def dr_evils_cipher(coded_message)
         break # Existing from the if /elsif condition.
       end
     end
-    if not found_match  # if found_match is false, as initialized on line 46, then you do following on the next line.
+    if not found_match  # if found_match is false, as initialized on line 47, then you do following on the next line.
       decoded_sentence << x # You are pushing x into decoded_sentence array.
     end
   end
@@ -115,25 +116,31 @@ p DrEvilCipher.new.decode_string("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmpp
 # @m'h%tvsfefpc%qszi$sr%erh*kix#ersxliv$gpsri@fyx*xlivi@asyph^fi@e^15&qmryxi@tivmsh%xlivi$alivi*m*asyph&nywx^fi$mrgsrwspefpi.") == "mini me, if i ever lost you i don't know what i would do.\n i'd probably move on and get another clone but there would be a 15 minute period there where i would just be inconsolable."
 # p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?") == "why make a trillion when we could make... billions?"
 
-# Some Tricks for shifting the letter in the alphabet***************************
+# ************* Some Tricks for shifting the letter in the alphabet **************
 # alphabet = ('a'..'z').to_a # This print of all alphabet. ['a','b','c', 'd']
 # rotated_alphabet = ('a'..'z').to_a.rotate(4) # this prints the alphabet starting from 'e', 'f', ..
 # cipher = {}
 # rotated_alphabet.zip(alphabet).to_h
 
-# This is another solution for cipher hash.
+# This is another solution for creating cipher hash.
 # rotated_alphabet.each_with_index do |letter, index|
 #   cipher[letter] = alphabet[index]
 # end
+
 # *************************
 
-# Reflection
+# REFLECTION
 
 # What concepts did you review or learn in this challenge?
-  # This challenge was very interesting and fun. I learn about zip, rotate methods which they were great refactoring to replace the cipher hash. Another help was to_h so that it creates a new hash when combine both arrays and return a single array.
+  # This challenge was very interesting and fun. I learn about zip, rotate methods
+  # which they were great refactoring to replace the cipher hash. Another help was
+  # to_h so that it creates a new hash when combine both arrays and return a single array.
 
 # What is still confusing to you about Ruby?
-  # I feel that I am very confident with Ruby code, I also noticed that I enjoyed refactoring. I did good job on this! I refactored 50 lines of code with  18 lines so I am so proud that the readability has been improved and it look more clean, clear within a class by calling different methods.
+  # I feel that I am very confident with Ruby code, I also noticed that I enjoyed
+  # refactoring. I did good job on this! I refactored 50 lines of code with  18 lines
+  # so I am so proud that the readability has been improved and it look more clean,
+  # clear within a class by calling different methods.
 
 # What are you going to study to get more prepared for Phase 1?
   # I think I should practice more and get familiar with methods and classess.
