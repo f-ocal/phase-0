@@ -46,10 +46,13 @@ adam.children = terah.children
 // Reflection: Use the reflection guidelines
 
 /* What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+    I didn't have any tests failed. I have followed each requirement and manipulate the object accordingly.
 
   How difficult was it to add and delete properties outside of the object itself?
+    I don't think it was difficult to pass the tests as long as read the requirement carefully and implement it.
 
   What did you learn about manipulating objects in this challenge?
+    I learned that you can add properties to the objects such as weight, spouse, children etc. Using the dot notation, you can add a property to an object instance.
 
 */
 // __________________________________________
