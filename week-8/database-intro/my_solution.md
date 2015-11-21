@@ -8,20 +8,21 @@ My schema has two tables : persons and outfits. Persons table include data value
 
 Two tables are linked with outfit_id where primary and foreign keys join both tables. You can adapt this schema for many people by including persons information to each person.
 
-<!-- REFLECTION
+### REFLECTION
 
-What are databases for?
- A database is the place that you can store data in a structured way so that it can be easily searched and accessed in the future.
+#### What are databases for?
+  A database is the place that you can store data in a structured way so that it can be easily searched and accessed in the future.
 
-What is a one-to-many relationship? For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
+#### What is a one-to-many relationship?
+  For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
 
-What is a primary key? What is a foreign key? How can you determine which is which?
+#### What is a primary key? What is a foreign key? How can you determine which is which?
   Primary key serves as unique identifier for each row or record in a given table. A relational database should have only and one primary key. By specifying that the `id` column is the  primary key. None of the values in this column are NULL.
 
   Foreign Key is column that contains the primary key of another table in the database. We use primary and foreign keys to connect rows in two different tables. One table's foreign key holds the value of another table's primary key. Unlike primary keys, foreign keys do not need to be unique and can be NULL.
 
-How can you select information out of a SQL database? What are some general guidelines for that?
-  To to select, retrieve and query information from database, you can use various commands in following examples in Virus Predictor. Please see below commands -->
+#### How can you select information out of a SQL database? What are some general guidelines for that?
+  To to select, retrieve and query information from database, you can use various commands in following examples in Virus Predictor. Please see below commands
 
 ## Virus Predictor
 
