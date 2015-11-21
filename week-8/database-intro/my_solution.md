@@ -1,5 +1,27 @@
 
-# 8.4 Introduction to Database Schemas and SQL
+# 8.4. Introduction to Database Schemas and SQL
+
+## My Own Schema
+![Schema Design](./own_schema.jpg)
+
+My schema has two tables : persons and outfits. Persons table include data values into the columns of `person_name`, `gender`, `height`, `weight`, `outfit_id`. Outfits table has `casual`, `night-out`, `smart casual`, `sportswear`. This type relationship called one-to-many relationship since one outfit can be owned by only one person. I designed `persons` table that stores information about persons (name, height etc..) with `outfit_id` as the foreign key. Outfits table is designed that information about the clothes where `id` as the primary key. Both `outfit_id` and `id` have the same value. <em>Note:</em> A foreign key of a child table (outfits) is a primary key of a parent table (persons), used to reference the parent table.
+
+Two tables are linked with outfit_id where primary and foreign keys join both tables. You can adapt this schema for many people by including persons information to each person.
+
+<!-- REFLECTION
+
+What are databases for?
+ A database is the place that you can store data in a structured way so that it can be easily searched and accessed in the future.
+
+What is a one-to-many relationship? For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
+
+What is a primary key? What is a foreign key? How can you determine which is which?
+  Primary key serves as unique identifier for each row or record in a given table. A relational database should have only and one primary key. By specifying that the `id` column is the  primary key. None of the values in this column are NULL.
+
+  Foreign Key is column that contains the primary key of another table in the database. We use primary and foreign keys to connect rows in two different tables. One table's foreign key holds the value of another table's primary key. Unlike primary keys, foreign keys do not need to be unique and can be NULL.
+
+How can you select information out of a SQL database? What are some general guidelines for that?
+  To to select, retrieve and query information from database, you can use various commands in following examples in Virus Predictor. Please see below commands -->
 
 ## Virus Predictor
 
@@ -39,7 +61,7 @@ Note that SQL doesn't print out very nicely in the terminal automatically. <br>L
 3. Select the `state_name` and `population` for all states.
 
   * type `SELECT state_name, population FROM states;` in the terminal and the output is <p><br>
-  ![State_name and population for all states](./three.jpg)</p>
+  ![State_name and population for all states](./questionThree.jpg)</p>
 
 4. Select the `state_name` and `population` for all states ordered by population. The state with the highest population should be at the top. <em>Note:</em> `DESC` is descending order (high to low), `ASC` is ascending order (low to high).
 
@@ -89,19 +111,3 @@ Note that SQL doesn't print out very nicely in the terminal automatically. <br>L
   JOIN regions ON states.region_id = regions.id
   ORDER BY region_id ASC;` in the terminal and the output is <p><br>
 ![Order Region_name and state_name order by region_id](./.jpg)</p>
-
-<!-- REFLECTION
-
-What are databases for?
- A database is the place that you can store data in a structured way so that it can be easily searched and accessed in the future.
-
-What is a one-to-many relationship?
-
-What is a primary key? What is a foreign key? How can you determine which is which?
-
-Primary key serves as unique identifier for each row or record in a given table. A relational database should have only and one primary key. By specifying that the `id` column is the  primary key. None of the values in this column are NULL.
-
-Foreign Key is column that contains the primary key of another table in the database. We use primary and foreign keys to connect rows in two different tables. One table's foreign key holds the value of another table's primary key. Unlike primary keys, foreign keys do not need to be unique and can be NULL.
-
-How can you select information out of a SQL database? What are some general guidelines for that?
-  To to select, retrieve and query information from database, you can use various commands as above examples in Virus Predictor. Please see each commands -->
