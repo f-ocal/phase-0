@@ -14,7 +14,8 @@ Two tables are linked with outfit_id where primary and foreign keys join both ta
   A database is the place that you can store data in a structured way so that it can be easily searched and accessed in the future.
 
 ##### What is a one-to-many relationship?
-  For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
+
+  The One-to-Many relationship is defined as a relationship between two tables where a row from one table can have multiple matching rows in another table. This relationship can be created using Primary key-Foreign key relationship. For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
 
 ##### What is a primary key? What is a foreign key? How can you determine which is which?
   Primary key serves as unique identifier for each row or record in a given table. A relational database should have only and one primary key. By specifying that the `id` column is the  primary key. None of the values in this column are NULL.
