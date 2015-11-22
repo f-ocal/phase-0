@@ -45,12 +45,12 @@ Let's use SQL to query information from the database.
 
 * To exit from SQLite shell, type `.exit`.
 
-Note that SQL doesn't print out very nicely in the terminal automatically. <br>Let's make it fancy then :ok_hand: Open the terminal and type the following:
+Note that SQL doesn't print out very nicely in the terminal automatically. Let's make it fancy then :ok_hand: Open the terminal and type the following:
 
-<p>`cat << EOF > ~/.sqliterc`<br>
-`.headers on`<br>
-`.mode column`<br>
-`EOF`</p>
+  <p>`cat << EOF > ~/.sqliterc`<br>
+  `.headers on`<br>
+  `.mode column`<br>
+  `EOF`</p>
 
 1. Select all data for all states. <p>
   * type `SELECT * FROM states;` in the terminal and the output is <p><br>

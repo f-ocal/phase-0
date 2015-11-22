@@ -7,12 +7,11 @@ One-to-One (1-1) relationship is defined as the relationship between two tables 
 
 ![One To One Schema Design](./imgs/one_to_one.jpg)
 
-
 ### Many-to-many Relationship
 
-![Many To Many Schema Design](./imgs/many_schema.jpg)
+Here, we have groceries and items tables with join table. Both tables can have multiple instances. More descriptive variables can improve the efficiency of the usage if we are going to build an app. For instance, 1 unit 6-pack of soda so the quantity is 1 and quantity_type is 6-pack (6 cans pack) or 1 loaf of bread.
 
-
+![Many To Many Schema Design](./imgs/many_to_many.jpg)
 
 ### Release 6:  <EM>Reflections</EM>
 
