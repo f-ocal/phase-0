@@ -107,9 +107,9 @@ Note that SQL doesn't print out very nicely in the terminal automatically. <br>L
 
 10. Select the `region_name` and the `state_name` for all states and regions in ascending order by `region_id`. Refer to the region by name. (This will involve joining the tables).
 
-  * type
-  `SELECT regions.region_name, states.state_name
-  FROM states
-  JOIN regions ON states.region_id = regions.id
-  ORDER BY region_id ASC;` in the terminal and the output is <p><br>
-![Order Region_name and state_name order by region_id](./join.jpg)</p>
+  * type <br>
+  `SELECT regions.region_name, states.state_name`<br>
+  `FROM states`<br>
+  `JOIN regions ON states.region_id = regions.id`<br>
+  `ORDER BY region_id ASC;` in the terminal and the output is <p><br>
+  ![Order Region_name and state_name order by region_id](./join.jpg)</p>
