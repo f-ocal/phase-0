@@ -108,7 +108,7 @@ Note that SQL doesn't print out very nicely in the terminal automatically. <br>L
 
   * type
   `SELECT regions.region_name, states.state_name
-  FROM states, regions
+  FROM states
   JOIN regions ON states.region_id = regions.id
   ORDER BY region_id ASC;` in the terminal and the output is <p><br>
-![Order Region_name and state_name order by region_id](./.jpg)</p>
+![Order Region_name and state_name order by region_id](./join.jpg)</p>
