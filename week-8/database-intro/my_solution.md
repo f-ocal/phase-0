@@ -14,7 +14,8 @@ Two tables are linked with outfit_id where primary and foreign keys join both ta
   A database is the place that you can store data in a structured way so that it can be easily searched and accessed in the future.
 
 ##### What is a one-to-many relationship?
-  For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
+
+  The One-to-Many relationship is defined as a relationship between two tables where a row from one table can have multiple matching rows in another table. This relationship can be created using Primary key-Foreign key relationship. For example, a teacher may teach zero or more classes, while a class is taught by only one teacher. This kind of relationship is called one-to-many. To support one-to-many relationship, we need to design two tables: a table Teachers, that stores information about teachers with teacher
 
 ##### What is a primary key? What is a foreign key? How can you determine which is which?
   Primary key serves as unique identifier for each row or record in a given table. A relational database should have only and one primary key. By specifying that the `id` column is the  primary key. None of the values in this column are NULL.
@@ -44,12 +45,12 @@ Let's use SQL to query information from the database.
 
 * To exit from SQLite shell, type `.exit`.
 
-Note that SQL doesn't print out very nicely in the terminal automatically. <br>Let's make it fancy then :ok_hand: Open the terminal and type the following:
+Note that SQL doesn't print out very nicely in the terminal automatically. Let's make it fancy then :ok_hand: Open the terminal and type the following:
 
-<p>`cat << EOF > ~/.sqliterc`<br>
-`.headers on`<br>
-`.mode column`<br>
-`EOF`</p>
+  <p>`cat << EOF > ~/.sqliterc`<br>
+  `.headers on`<br>
+  `.mode column`<br>
+  `EOF`</p>
 
 1. Select all data for all states. <p>
   * type `SELECT * FROM states;` in the terminal and the output is <p><br>
@@ -106,9 +107,9 @@ Note that SQL doesn't print out very nicely in the terminal automatically. <br>L
 
 10. Select the `region_name` and the `state_name` for all states and regions in ascending order by `region_id`. Refer to the region by name. (This will involve joining the tables).
 
-  * type
-  `SELECT regions.region_name, states.state_name
-  FROM states, regions
-  JOIN regions ON states.region_id = regions.id
-  ORDER BY region_id ASC;` in the terminal and the output is <p><br>
-![Order Region_name and state_name order by region_id](./.jpg)</p>
+  * type <br>
+  `SELECT regions.region_name, states.state_name`<br>
+  `FROM states`<br>
+  `JOIN regions ON states.region_id = regions.id`<br>
+  `ORDER BY region_id ASC;` in the terminal and the output is <p><br>
+  ![Order Region_name and state_name order by region_id](./join.jpg)</p>
