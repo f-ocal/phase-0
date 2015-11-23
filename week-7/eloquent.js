@@ -1,6 +1,6 @@
 // Eloquent JavaScript
 
-// Run this file in your terminal using `node eloquent.js`. 
+// Run this file in your terminal using `node eloquent.js`.
 
 // Program Structure
 // Write your own variable and do something to it.
