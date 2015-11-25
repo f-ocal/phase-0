@@ -72,7 +72,7 @@ Note that SQL doesn't print out very nicely in the terminal automatically. Let's
 
 5. Select the `state_name` for the states in region 7.
 
-  * type `SELECT state_name FROM states WHERE region_id == 7;` in the terminal and the output is <p><br>
+  * type `SELECT state_name FROM states WHERE region_id = 7;` in the terminal and the output is <p><br>
   ![State_name for the states in region 7](./region_7.jpg)</p>
 
 6. Select the `state_name` and `population_density` for states with a population density over 50 ordered from least to most dense.

@@ -28,39 +28,39 @@
 
 # (array.dup.to_s.gsub(" ", "").length) to remove the whitespace if input includes.
 
-class CreditCard
-
-  def initialize(input)
-    raise ArgumentError.new('The card is not valid') unless (input.to_s.length == 16 ) && (input.is_a? Integer)
-    @card = input
-    @accumulator = 0
-  end
-
-  def double_even_index
-    array = @card.to_s.split(//)
-    array.map! {|character| character.to_i }
-    (0..15).each { |index| (array[index] =(array[index] * 2)) if index.even? }
-    return array
-  end
-
-  def sum_digits(array)
-    array.each do |digit|
-      if (digit < 10)
-        @accumulator += digit
-      else
-        digit.to_s.split(//).each {|x| @accumulator += x.to_i }
-      end
-    end
-  end
-
-  def check_card
-    sum_digits(double_even_index)
-    @accumulator % 10 == 0
-  end
-end
-
-cc=CreditCard.new(1234567891234567)
-p cc.check_card
+# class CreditCard
+#
+#   def initialize(input)
+#     raise ArgumentError.new('The card is not valid') unless (input.to_s.length == 16 ) && (input.is_a? Integer)
+#     @card = input
+#     @accumulator = 0
+#   end
+#
+#   def double_even_index
+#     array = @card.to_s.split(//)
+#     array.map! {|character| character.to_i }
+#     (0..15).each { |index| (array[index] =(array[index] * 2)) if index.even? }
+#     return array
+#   end
+#
+#   def sum_digits(array)
+#     array.each do |digit|
+#       if (digit < 10)
+#         @accumulator += digit
+#       else
+#         digit.to_s.split(//).each {|x| @accumulator += x.to_i }
+#       end
+#     end
+#   end
+#
+#   def check_card
+#     sum_digits(double_even_index)
+#     @accumulator % 10 == 0
+#   end
+# end
+#
+# cc=CreditCard.new(1234567891234567)
+# p cc.check_card
 
 
 
@@ -103,8 +103,48 @@ class CreditCard
     convert_to_array_of_digits(array_of_digits.join.to_i)
   end
 end
-cc=CreditCard.new(1234567891234567)
-p cc.check_card
+
+def assert
+  raise 'help me!' unless yield
+end
+
+# returns false for invalid credit card
+# cc=CreditCard.new(1234567891234567)
+
+# assert {cc.check_card == false}
+# This is my rspec test that I wrote.
+
+describe CreditCard do
+  let(:invalid_credit_card) { CreditCard.new(1234567891234567) }
+  let(:valid_credit_card) { CreditCard.new(4111111111111111)}
+  let(:credit_card_with_too_many_digits) {12345678912345996}
+
+
+  describe '#initialize' do
+    it 'does not raise error with 16 digit credit card' do
+      expect{ invalid_credit_card }.to_not raise_error
+    end
+
+    it 'does raise error with 15 or fewer digit credit card' do
+      expect{CreditCard.new(123456789123456)}.to raise_error ArgumentError, 'The card is not valid'
+    end
+
+    it 'does raise error with 17 or more digit credit card' do
+      expect{CreditCard.new(credit_card_with_too_many_digits)}.to raise_error ArgumentError, 'The card is not valid'
+    end
+  end
+
+  describe '#check_card' do
+    it 'returns false if credit card is not valid' do
+      # cc = CreditCard.new(1234567891234567)
+      expect(invalid_credit_card.check_card).to eq false
+    end
+
+    it 'returns true if credit card is valid' do
+      expect(valid_credit_card.check_card).to eq true
+    end
+  end
+end
 
 # Reflection
 =begin
@@ -116,4 +156,4 @@ What new methods did you find to help you when you refactored?
 
 What concepts or learnings were you able to solidify in this challenge?
   Some of the methods such as split, inject and reduce, private & public methods and refactoring.
-=e
+=end
