@@ -1,8 +1,16 @@
 # Reverse Words
 
 
-# I worked on this challenge with Brian
-# This challenge took me [#] hours.
+# I worked on this challenge with Brian. This challenge took me 30 mins.
+
+# Reflection
+=begin
+
+What concepts did you review in this challenge?
+What is still confusing to you about Ruby?
+What are you going to study to get more prepared for Phase 1?
+
+=end
 
 # Pseudocode
 =begin
@@ -29,12 +37,3 @@ reverse_words("this is a test")
 def reverse_words(string)
   return string.split(" ").each{|element| element.reverse!()}.join(" ")
 end
-
-# Reflection
-=begin
-
-What concepts did you review in this challenge?
-What is still confusing to you about Ruby?
-What are you going to study to get more prepared for Phase 1?
-
-=end
