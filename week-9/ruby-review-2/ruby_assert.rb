@@ -85,7 +85,8 @@ card_2.check_card == true
 assert { card_1.check_card == false }
 assert { card_2.check_card == true } # This should return true since our card number is not valid.
 
-# Let's write rspec for this program.
+# RSpec for this challenge - it is written by me.
+
 # Do not forget to run the file with rspec filename.rb to check if it passes the tests:
 describe CreditCard do
 let(:invalid_credit_card) {CreditCard.new(1234567891234567)}
