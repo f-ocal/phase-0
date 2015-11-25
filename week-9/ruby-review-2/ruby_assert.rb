@@ -4,16 +4,13 @@
 
 # 2. Review the simple assert statement
 
-# def assert
-#   raise "Assertion failed!" unless yield
-# end
-#
-# name = "bettysue"
-# assert { name == "bettysue" }
+def assert
+  raise "Assertion failed!" unless yield
+end
+
+name = "bettysue"
+assert { name == "bettysue" }
 # assert { name == "billybob" }
-
-# assert { credit_card.verify == true }
-
 
 # 2. Pseudocode what happens when the code above runs
 =begin
