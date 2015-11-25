@@ -1,13 +1,21 @@
 # Create a Car Class from User Stories
 
-# I worked on this challenge with Brian and Fatma.
+# I worked on this challenge with Brian and it took us 1.5 hours.
 
 # Reflection
 =begin
 
 What concepts did you review in this challenge?
+  At first, I thought this challenge is very complicated with respect to how we could implement the logic in the code.
+  By start putting everything in Pseudocode, things were more clear.
+  We have reviewed creating objects of a class and calling methods for that object.
+  We also created another class within the same program that brought more functionality to our program.
+
 What is still confusing to you about Ruby?
+  I am not much confused about Ruby. I think Ruby is great to do many things with simple syntax.
+
 What are you going to study to get more prepared for Phase 1?
+  I am planning to study more, especially inheritance classes and object-oriented programming with Ruby.
 
 =end
 
@@ -110,8 +118,8 @@ end
 
 
 # 4. Refactored Solution
-#removed variables fir speed equal to zero at initialize.
-#cleaned up text printouts to be more logical.
+# removed variables for speed equal to zero at initialize.
+# cleaned up text printouts to be more logical.
 
 class Car
 
@@ -156,7 +164,6 @@ class Car
     @pizza_box.shift
     puts "The next pizza to be delivered is #{@pizza_box[-1]}."
   end
-
 
   def display
     puts "Your current speed is #{@speed} mph."
