@@ -14,17 +14,19 @@
 # 1st -> create a list, with help of hash
 # key -> ingre. value -> quantity
 
-def make_list(item, quantity)
-  groceries = { item => quantity}
-  return groceries
-end
-list = make_list("lemonade", 2)
-p list
+# def make_list(item, quantity)
+#   groceries = { item => quantity}
+#   return groceries
+# end
+# list = make_list("lemonade", 2)
+# p list
 
 # 2nd -> add item with qty
   # tomatoes, qty 3
   # onions, qty 1
   # ice cream, qty 4
+
+list = {}
 
 def add_item(item, quantity, list)
   list[item] = quantity
